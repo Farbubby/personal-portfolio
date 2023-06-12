@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <>
         <div className='flex items-center mt-3 p-2 ml-3'>
-            <div className='mr-auto text text-3xl'> Farhan Mahbub </div>
+            <div className='mr-auto text text-2xl'> Farhan Mahbub </div>
             <div className='flex flex-row gap-8 items-center text-lg mr-3'>
                 <button className="md:hidden" onClick={() => setToggle(!toggle)}> Toggle </button>
                 <ul className='md:flex flex-row gap-8 hidden'>
