@@ -3,6 +3,8 @@ import { useState } from "react";
 function Navbar() {
   const [toggle, setToggle] = useState(false);
 
+  let optionStyle = "hover:-translate-y-1 duration-150";
+
   return (
     <>
       <div className="flex items-center mt-3 p-2 ml-3">
@@ -12,9 +14,9 @@ function Navbar() {
             Toggle
           </button>
           <ul className="md:flex flex-row gap-8 hidden">
-            <li className="hover:-translate-y-1 duration-150"> Home </li>
-            <li className="hover:-translate-y-1 duration-150"> About Me</li>
-            <li className="hover:-translate-y-1 duration-150"> Projects </li>
+            <li className={optionStyle}> Home </li>
+            <li className={optionStyle}> About Me </li>
+            <li className={optionStyle}> Projects </li>
           </ul>
         </div>
       </div>
