@@ -11,7 +11,7 @@ function Navbar() {
         <div className="mr-auto text text-2xl"> Farhan Mahbub </div>
         <div className="flex flex-row gap-8 items-center text-lg mr-3">
           <button className="md:hidden" onClick={() => setToggle(!toggle)}>
-            Toggle
+            +
           </button>
           <ul className="md:flex flex-row gap-8 hidden">
             <li className={optionStyle}> Home </li>
