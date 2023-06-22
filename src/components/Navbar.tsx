@@ -12,11 +12,11 @@ function Navbar() {
           <button className="md:hidden" onClick={() => setToggle(!toggle)}>
             +
           </button>
-          <ul className={"md:flex flex-row gap-8 hidden font-bold" + sandcolorText}>
+          <div className={"md:flex flex-row gap-8 hidden font-bold" + sandcolorText}>
             <a href="/" className="">Home</a>
             <a href="/about" className="">About Me</a>
             <a href="/projects" className="">Projects</a>
-          </ul>
+          </div>
         </div>
       </div>
     </>
