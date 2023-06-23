@@ -3,6 +3,7 @@ import { useState } from "react";
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   let sandcolorText = " bg-gradient-to-r from-red-500 to-orange-400 text-transparent bg-clip-text";
+  let hoverText = " hover:text-white duration-200";
 
   return (
     <>
@@ -13,9 +14,9 @@ function Navbar() {
             +
           </button>
           <div className={"md:flex flex-row gap-8 hidden font-bold" + sandcolorText}>
-            <a href="/" className="">Home</a>
-            <a href="/about" className="">About Me</a>
-            <a href="/projects" className="">Projects</a>
+            <a href="/" className={hoverText}>Home</a>
+            <a href="/about" className={hoverText}>About Me</a>
+            <a href="/projects" className={hoverText}>Projects</a>
           </div>
         </div>
       </div>
