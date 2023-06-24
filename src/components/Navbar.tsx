@@ -29,6 +29,9 @@ function Navbar() {
             <a href="/projects" className={hoverText}>
               Projects
             </a>
+            <a href="/Resume_FarhanMahbub.pdf" className={hoverText}>
+              Resume
+            </a>
           </div>
         </div>
       </div>
