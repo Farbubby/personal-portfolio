@@ -9,7 +9,7 @@ let projects =
 ---
 
 <Layout title="Projects">
-  <div class="mt-20 flex flex-col items-center">
+  <div class="flex flex-col h-screen justify-center items-center">
     <div
       class={"text-4xl md:text-5xl drop-shadow-glow font-bold p-1" +
         sandcolorText}>
@@ -17,15 +17,15 @@ let projects =
     </div>
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-x-10 gap-y-10 px-8 text-center">
-      <div class={projects}>
-        <h1 class="font-bold">Find my Professor</h1>
-      </div>
-      <div class={projects}>
-        <h1 class="font-bold">Stocks Prediction</h1>
-      </div>
-      <div class={projects}>
-        <h1 class="font-bold">Grocery App</h1>
-      </div>
+      <a href="/projects/findmyprofessor" class={"font-bold" + projects}>
+        Find My Professor
+      </a>
+      <a href="/projects/stocksprediction" class={"font-bold" + projects}>
+        Stocks Prediction
+      </a>
+      <a href="/projects/groceryapp" class={"font-bold" + projects}>
+        Grocery App
+      </a>
     </div>
   </div>
 </Layout>

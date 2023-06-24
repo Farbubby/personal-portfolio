@@ -8,11 +8,11 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex mt-3 p-2 ml-3 drop-shadow-glow">
+      <div className="flex mt-3 px-4 ml-3 drop-shadow-glow items-center h-20">
         <div className={"mr-auto text text-2xl font-bold" + sandcolorText}>
           Farhan Mahbub
         </div>
-        <div className="flex flex-row gap-8 items-center text-lg mr-3">
+        <div className="flex flex-row gap-8 text-lg mr-3">
           <button className="md:hidden" onClick={() => setToggle(!toggle)}>
             +
           </button>

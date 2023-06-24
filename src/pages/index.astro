@@ -9,18 +9,18 @@ let sandcolorText =
 ---
 
 <Layout title="Home">
-  <div class="mt-20 text-center">
+  <div class="flex flex-col h-screen items-center justify-center">
     <div
       class={"text-4xl md:text-5xl drop-shadow-glow font-bold p-1" +
         sandcolorText}>
       Welcome to my Website!
     </div>
-  </div>
-  <div
-    class={"flex flex-col md:flex-row justify-center items-center gap-10 mt-14 drop-shadow-glow text-orange-300 " +
-      sandcolorText}>
-    <a href="/about" class={buttonStyle}>About Me</a>
-    <a href="/projects" class={buttonStyle}>Projects</a>
-    <a href="./public/Resume_FarhanMahbub.pdf" class={buttonStyle}>Resume</a>
+    <div
+      class={"flex flex-col md:flex-row gap-10 mt-14 drop-shadow-glow text-orange-300 " +
+        sandcolorText}>
+      <a href="/about" class={buttonStyle}>About Me</a>
+      <a href="/projects" class={buttonStyle}>Projects</a>
+      <a href="./public/Resume_FarhanMahbub.pdf" class={buttonStyle}>Resume</a>
+    </div>
   </div>
 </Layout>
