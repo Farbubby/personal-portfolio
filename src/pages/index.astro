@@ -8,7 +8,7 @@ let sandcolorText =
   " bg-gradient-to-r from-red-500 to-orange-400 text-transparent bg-clip-text";
 
 let projects =
-  " text-pink-950 bg-gradient-to-r from-red-500 to-orange-400 rounded-xl p-4 ease-in-out hover:scale-105 hover:drop-shadow-glow duration-200 max-w-lg";
+  " text-pink-950 bg-gradient-to-r from-red-500 to-orange-400 rounded-xl p-4 ease-in-out hover:scale-105 hover:drop-shadow-glow duration-200 max-w-sm";
 ---
 
 <Layout title="Home">
@@ -59,15 +59,48 @@ let projects =
       </div>
       <div class="flex flex-col items-center">
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-x-10 gap-y-10 px-8 text-center">
-          <a href="/projects/findmyprofessor" class={"font-bold" + projects}>
-            Find My Professor
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-x-10 gap-y-10 px-8">
+          <a href="/projects/findmyprofessor" class={projects}>
+            <div class="font-bold mb-3 text-xl">Find My Professor</div>
+            <p class="mb-3">
+              An app that provides a list of professors with average ratings,
+              reviews, and adjective radar charts given a university name and a
+              course code.
+            </p>
+            <div class="font-bold italic flex gap-4 max-w-sm">
+              <div>Go</div>
+              <div>GraphQL</div>
+              <div>SQL</div>
+              <div>PostgreSQL</div>
+            </div>
           </a>
-          <a href="/projects/stocksprediction" class={"font-bold" + projects}>
-            Stocks Prediction
+          <a href="/projects/stocksprediction" class={projects}>
+            <div class="font-bold mb-3 text-xl">Stocks Prediction</div>
+            <p class="mb-3">
+              An LSTM model that predicts the closing price of a stock in one
+              minute time intervals.
+            </p>
+            <div class="font-bold italic flex flex-wrap gap-x-4 max-w-sm">
+              <div>Python</div>
+              <div>TensorFlow</div>
+              <div>Pandas</div>
+              <div>NumPy</div>
+              <div>yfinance</div>
+            </div>
           </a>
-          <a href="/projects/groceryapp" class={"font-bold" + projects}>
-            Grocery App
+          <a href="/projects/groceryapp" class={projects}>
+            <div class="font-bold mb-3 text-xl">Grocery App</div>
+            <p class="mb-3">
+              An app that displays a selection of food items of different types
+              and the user has to login to manage and checkout their cart.
+            </p>
+            <div class="font-bold italic flex flex-wrap gap-x-4 max-w-sm">
+              <div>TypeScript</div>
+              <div>React</div>
+              <div>TailwindCSS</div>
+              <div>Express</div>
+              <div>Vite</div>
+            </div>
           </a>
         </div>
       </div>
