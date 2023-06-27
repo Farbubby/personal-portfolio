@@ -23,10 +23,10 @@ function Navbar() {
             <a href="/" className={hoverText}>
               Home
             </a>
-            <a href="/about" className={hoverText}>
+            <a href="#about" className={hoverText}>
               About Me
             </a>
-            <a href="/projects" className={hoverText}>
+            <a href="#projects" className={hoverText}>
               Projects
             </a>
             <a href="/Resume_FarhanMahbub.pdf" className={hoverText}>
