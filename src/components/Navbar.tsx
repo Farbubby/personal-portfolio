@@ -4,7 +4,16 @@ function Navbar() {
   const [toggle, setToggle] = useState(false);
   let sandcolorText =
     " bg-gradient-to-r from-red-500 to-orange-400 text-transparent bg-clip-text";
+
   let hoverText = " hover:text-white duration-200";
+
+  function scrollTo(id: string) {
+    let element = document.getElementById(id);
+
+    if (element == null) return;
+
+    element.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
@@ -20,15 +29,15 @@ function Navbar() {
             className={
               "md:flex flex-row gap-8 hidden font-bold" + sandcolorText
             }>
-            <a href="/" className={hoverText}>
+            <button onClick={() => scrollTo("home")} className={hoverText}>
               Home
-            </a>
-            <a href="#about" className={hoverText}>
+            </button>
+            <button onClick={() => scrollTo("about")} className={hoverText}>
               About Me
-            </a>
-            <a href="#projects" className={hoverText}>
+            </button>
+            <button onClick={() => scrollTo("projects")} className={hoverText}>
               Projects
-            </a>
+            </button>
             <a href="/Resume_FarhanMahbub.pdf" className={hoverText}>
               Resume
             </a>
