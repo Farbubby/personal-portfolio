@@ -10,12 +10,12 @@ export default {
         ],
       },
       animation: {
-        fade: "fadeIn 1s ease-in-out",
+        fadeDown: "fadeDown 1s ease-in-out",
       },
       keyframes: {
-        fadeIn: {
-          "0%": {opacity: 0 },
-          "100%": {opacity: 1 },
+        fadeDown: {
+          "0%": {transform: 'translateY(-1rem)', opacity: 0 },
+          "100%": {transform: 'translateY(0rem)', opacity: 1 },
         },
       },
     },
