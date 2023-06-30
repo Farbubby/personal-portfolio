@@ -10,9 +10,10 @@ function Navbar() {
   function scrollTo(id: string) {
     let element = document.getElementById(id);
 
+    if (window == null) return;
     if (element == null) return;
 
-    element.scrollIntoView({ behavior: "smooth" });
+    window.scrollTo({ behavior: "smooth", top: element.offsetTop - 90});
   };
 
   return (
