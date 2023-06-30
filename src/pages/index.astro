@@ -8,9 +8,30 @@ let projects =
   " text-pink-950 bg-gradient-to-r from-red-500 to-orange-400 rounded-xl p-4 ease-in-out hover:scale-105 hover:drop-shadow-glow duration-200 max-w-lg";
 ---
 
+<script>
+  const animateOnScroll = (elements: any) => {
+    elements.forEach((element: any) => {
+      if (element.isIntersecting) {
+        element.target.classList.add("animate-fadeDown");
+      } else {
+        element.target.classList.remove("animate-fadeDown");
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(animateOnScroll);
+  const elements = document.querySelectorAll(".animate-fadeDown");
+
+  elements.forEach(function (target) {
+    observer.observe(target);
+  });
+</script>
+
 <Layout title="Portfolio">
   <div>
-    <div id="home" class="flex flex-col h-screen justify-center">
+    <div
+      id="home"
+      class="flex flex-col h-screen justify-center mb-24 animate-fadeDown">
       <div
         class={"drop-shadow-glow font-bold px-4 text-center" + sandcolorText}>
         <div class="text-4xl md:text-5xl">Welcome to my portfolio!</div>
@@ -21,7 +42,7 @@ let projects =
       </div>
     </div>
 
-    <div id="about" class="flex flex-col mb-28">
+    <div id="about" class="flex flex-col mb-24 animate-fadeDown">
       <div
         class={"text-4xl md:text-5xl drop-shadow-glow font-bold p-1 text-center" +
           sandcolorText}>
@@ -50,7 +71,7 @@ let projects =
       </div>
     </div>
 
-    <div id="projects" class="flex flex-col mb-28">
+    <div id="projects" class="flex flex-col mb-24 animate-fadeDown">
       <div
         class={"text-4xl md:text-5xl drop-shadow-glow font-bold p-1 text-center" +
           sandcolorText}>
