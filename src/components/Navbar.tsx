@@ -36,7 +36,7 @@ function Navbar() {
             <button onClick={() => scrollTo("projects")} className={hoverText}>
               Projects
             </button>
-            <a href="/Resume_FarhanMahbub.pdf" className={hoverText}>
+            <a href="/resume.pdf" className={hoverText}>
               Resume
             </a>
           </div>
