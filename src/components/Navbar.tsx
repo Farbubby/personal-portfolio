@@ -13,15 +13,12 @@ function Navbar() {
     if (window == null) return;
     if (element == null) return;
 
-    window.scrollTo({ behavior: "smooth", top: element.offsetTop - 90});
-  };
+    window.scrollTo({ behavior: "smooth", top: element.offsetTop - 90 });
+  }
 
   return (
     <>
-      <div className="flex mt-3 px-4 ml-3 drop-shadow-glow items-center h-20">
-        <div className={"mr-auto text text-2xl font-bold" + sandcolorText}>
-          Farhan Mahbub
-        </div>
+      <div className="flex flex-row-reverse mt-3 px-4 ml-3 drop-shadow-glow items-center h-20">
         <div className="flex flex-row gap-8 text-lg mr-3">
           <button className="md:hidden" onClick={() => setToggle(!toggle)}>
             +
