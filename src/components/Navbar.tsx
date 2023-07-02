@@ -1,7 +1,8 @@
 import { useState } from "react";
+import Mobilebar from "./Mobilebar";
 
 function Navbar() {
-  const [toggle, setToggle] = useState(false);
+  const [toggleBar, setToggleBar] = useState(false);
   let sandcolorText =
     " bg-gradient-to-r from-red-500 to-orange-400 text-transparent bg-clip-text";
 
@@ -18,9 +19,9 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-row-reverse mt-3 px-4 ml-3 drop-shadow-glow items-center h-20">
+      <div className="flex flex-row-reverse px-4 drop-shadow-glow items-center h-20 fixed w-full backdrop-blur z-10">
         <div className={"flex flex-row gap-8 text-lg mr-3" + sandcolorText}>
-          <button className="md:hidden" onClick={() => setToggle(!toggle)}>
+          <button className="md:hidden" onClick={() => setToggleBar(!toggleBar)}>
             +
           </button>
           <div className={"md:flex flex-row gap-8 hidden font-bold"}>
@@ -38,6 +39,9 @@ function Navbar() {
             </a>
           </div>
         </div>
+      </div>
+      <div>
+        <Mobilebar show={toggleBar} close={() => setToggleBar(false)} />
       </div>
     </>
   );
