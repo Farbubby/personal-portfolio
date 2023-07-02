@@ -21,7 +21,9 @@ function Navbar() {
     <>
       <div className="flex flex-row-reverse px-4 drop-shadow-glow items-center h-20 fixed w-full backdrop-blur z-10">
         <div className={"flex flex-row gap-8 text-lg mr-3" + sandcolorText}>
-          <button className="md:hidden" onClick={() => setToggleBar(!toggleBar)}>
+          <button
+            className="md:hidden"
+            onClick={() => setToggleBar(!toggleBar)}>
             +
           </button>
           <div className={"md:flex flex-row gap-8 hidden font-bold"}>
@@ -40,7 +42,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="flex flex-row-reverse">
         <Mobilebar show={toggleBar} close={() => setToggleBar(false)} />
       </div>
     </>
