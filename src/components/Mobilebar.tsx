@@ -22,29 +22,36 @@ function Mobilebar({ show, close }: Props) {
   return (
     <>
       {show && (
-        <div
-          className={
-            "flex flex-col px-8 justify-around font-bold items-center z-20 fixed h-screen bg-gradient-to-t from-black via-gray-950 to-gray-800 w-3/4 sm:w-1/2"
-          }>
+        <>
           <button
-            onClick={() => scrollTo("home")}
-            className={hoverText + sandcolorText}>
-            Home
+            className={"fixed z-30 p-8 text-3xl" + hoverText + sandcolorText}
+            onClick={() => close()}>
+            X
           </button>
-          <button
-            onClick={() => scrollTo("about")}
-            className={hoverText + sandcolorText}>
-            About Me
-          </button>
-          <button
-            onClick={() => scrollTo("projects")}
-            className={hoverText + sandcolorText}>
-            Projects
-          </button>
-          <a href="/resume.pdf" className={hoverText + sandcolorText}>
-            Resume
-          </a>
-        </div>
+          <div
+            className={
+              "flex flex-col px-8 gap-20 font-bold items-center justify-center z-20 fixed h-screen bg-gradient-to-t from-black via-gray-950 to-gray-800 w-3/4 sm:w-1/2"
+            }>
+            <button
+              onClick={() => scrollTo("home")}
+              className={hoverText + sandcolorText}>
+              Home
+            </button>
+            <button
+              onClick={() => scrollTo("about")}
+              className={hoverText + sandcolorText}>
+              About Me
+            </button>
+            <button
+              onClick={() => scrollTo("projects")}
+              className={hoverText + sandcolorText}>
+              Projects
+            </button>
+            <a href="/resume.pdf" className={hoverText + sandcolorText}>
+              Resume
+            </a>
+          </div>
+        </>
       )}
     </>
   );

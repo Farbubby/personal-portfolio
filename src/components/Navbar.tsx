@@ -22,7 +22,7 @@ function Navbar() {
       <div className="flex flex-row-reverse px-4 drop-shadow-glow items-center h-20 fixed w-full backdrop-blur z-10">
         <div className={"flex flex-row gap-8 text-lg mr-3" + sandcolorText}>
           <button
-            className="md:hidden"
+            className="md:hidden text-3xl"
             onClick={() => setToggleBar(!toggleBar)}>
             +
           </button>
