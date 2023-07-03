@@ -25,7 +25,7 @@ function Mobilebar({ show, close }: Props) {
         <>
           <button
             className={
-              "flex items-center fixed z-30 p-6 text-3xl h-20" +
+              "fixed z-30 p-6 text-3xl h-20 animate-fadeIn" +
               hoverText +
               sandcolorText
             }
@@ -34,7 +34,7 @@ function Mobilebar({ show, close }: Props) {
           </button>
           <div
             className={
-              "flex flex-col px-8 text-2xl gap-20 font-bold items-center justify-center z-20 fixed h-screen bg-gradient-to-t from-black via-gray-950 to-gray-800 w-3/4 sm:w-1/2"
+              "flex flex-col px-8 animate-fadeIn text-2xl gap-20 font-bold items-center justify-center z-20 fixed h-screen bg-gradient-to-t from-black via-gray-950 to-gray-800 w-3/4 sm:w-1/2"
             }>
             <button
               onClick={() => scrollTo("home")}
