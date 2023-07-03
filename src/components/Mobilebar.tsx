@@ -24,7 +24,11 @@ function Mobilebar({ show, close }: Props) {
       {show && (
         <>
           <button
-            className={"fixed z-30 p-8 text-3xl" + hoverText + sandcolorText}
+            className={
+              "flex items-center fixed z-30 p-6 text-3xl h-20" +
+              hoverText +
+              sandcolorText
+            }
             onClick={() => close()}>
             X
           </button>
