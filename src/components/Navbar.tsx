@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Mobilebar from "./Mobilebar";
+import { smoothScrollTo } from "../functions";
 
 function Navbar() {
   const [toggleBar, setToggleBar] = useState(false);
@@ -7,15 +8,6 @@ function Navbar() {
     " bg-gradient-to-r from-red-500 to-orange-400 text-transparent bg-clip-text";
 
   let hoverText = " hover:text-white duration-200";
-
-  function scrollTo(id: string) {
-    let element = document.getElementById(id);
-
-    if (window == null) return;
-    if (element == null) return;
-
-    window.scrollTo({ behavior: "smooth", top: element.offsetTop - 90 });
-  }
 
   return (
     <>
@@ -27,13 +19,13 @@ function Navbar() {
             +
           </button>
           <div className={"md:flex flex-row gap-8 hidden font-bold"}>
-            <button onClick={() => scrollTo("home")} className={hoverText}>
+            <button onClick={() => smoothScrollTo("home")} className={hoverText}>
               Home
             </button>
-            <button onClick={() => scrollTo("about")} className={hoverText}>
+            <button onClick={() => smoothScrollTo("about")} className={hoverText}>
               About Me
             </button>
-            <button onClick={() => scrollTo("projects")} className={hoverText}>
+            <button onClick={() => smoothScrollTo("projects")} className={hoverText}>
               Projects
             </button>
             <a href="/resume.pdf" className={hoverText}>
