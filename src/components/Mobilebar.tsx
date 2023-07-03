@@ -30,7 +30,7 @@ function Mobilebar({ show, close }: Props) {
           </button>
           <div
             className={
-              "flex flex-col px-8 gap-20 font-bold items-center justify-center z-20 fixed h-screen bg-gradient-to-t from-black via-gray-950 to-gray-800 w-3/4 sm:w-1/2"
+              "flex flex-col px-8 text-2xl gap-20 font-bold items-center justify-center z-20 fixed h-screen bg-gradient-to-t from-black via-gray-950 to-gray-800 w-3/4 sm:w-1/2"
             }>
             <button
               onClick={() => scrollTo("home")}
