@@ -7,8 +7,6 @@ function Navbar() {
   let sandcolorText =
     " bg-gradient-to-r from-red-500 to-orange-400 text-transparent bg-clip-text";
 
-  let hoverText = " hover:text-white duration-200";
-
   return (
     <>
       <div className="flex flex-row-reverse px-4 drop-shadow-glow items-center h-20 fixed w-full backdrop-blur z-10">
@@ -19,16 +17,22 @@ function Navbar() {
             +
           </button>
           <div className={"md:flex flex-row gap-8 hidden font-bold"}>
-            <button onClick={() => smoothScrollTo("home")} className={hoverText}>
+            <button
+              onClick={() => smoothScrollTo("home")}
+              className={"hover:text-white duration-200"}>
               Home
             </button>
-            <button onClick={() => smoothScrollTo("about")} className={hoverText}>
+            <button
+              onClick={() => smoothScrollTo("about")}
+              className={"hover:text-white duration-200"}>
               About Me
             </button>
-            <button onClick={() => smoothScrollTo("projects")} className={hoverText}>
+            <button
+              onClick={() => smoothScrollTo("projects")}
+              className={"hover:text-white duration-200"}>
               Projects
             </button>
-            <a href="/resume.pdf" className={hoverText}>
+            <a href="/resume.pdf" className={"hover:text-white duration-200"}>
               Resume
             </a>
           </div>
