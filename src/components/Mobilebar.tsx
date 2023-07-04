@@ -31,17 +31,26 @@ function Mobilebar({ show, close }: Props) {
           status
         }>
         <button
-          onClick={() => smoothScrollTo("home")}
+          onClick={() => {
+            smoothScrollTo("home");
+            close();
+          }}
           className={"hover:text-white duration-200" + sandcolorText}>
           Home
         </button>
         <button
-          onClick={() => smoothScrollTo("about")}
+          onClick={() => {
+            smoothScrollTo("about");
+            close();
+          }}
           className={"hover:text-white duration-200" + sandcolorText}>
           About Me
         </button>
         <button
-          onClick={() => smoothScrollTo("projects")}
+          onClick={() => {
+            smoothScrollTo("projects");
+            close();
+          }}
           className={"hover:text-white duration-200" + sandcolorText}>
           Projects
         </button>
