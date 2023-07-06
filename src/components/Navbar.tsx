@@ -16,7 +16,8 @@ function Navbar() {
             onClick={() => setToggleBar(!toggleBar)}>
             +
           </button>
-          <div className={"md:flex flex-row gap-8 hidden font-bold"}>
+          <div
+            className={"md:flex flex-row gap-8 hidden font-bold items-center"}>
             <button
               onClick={() => smoothScrollTo("home")}
               className={"hover:text-white duration-200"}>
@@ -35,6 +36,14 @@ function Navbar() {
             <a href="/resume.pdf" className={"hover:text-white duration-200"}>
               Resume
             </a>
+            <div className="flex gap-3 items-center">
+              <a href="https://github.com/Farbubby">
+                <img className="w-7 h-7" src="/github.png" alt="Github" />
+              </a>
+              <a href="https://www.linkedin.com/in/farhan-mahbub/">
+                <img className="w-7 h-6" src="/linkedin.png" alt="LinkedIn" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
