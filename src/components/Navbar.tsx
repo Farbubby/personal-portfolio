@@ -4,8 +4,7 @@ import { smoothScrollTo } from "../functions";
 
 function Navbar() {
   const [toggleBar, setToggleBar] = useState(false);
-  let sandcolorText =
-    " bg-gradient-to-r from-red-500 to-orange-400 text-transparent bg-clip-text";
+  let sandcolorText = " bg-blue-400 text-transparent bg-clip-text";
 
   return (
     <>
@@ -39,7 +38,7 @@ function Navbar() {
             <div className="flex gap-3 items-center">
               <a href="https://github.com/Farbubby">
                 <svg
-                  className="fill-cyan-500 w-6 h-6"
+                  className="fill-blue-400 w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
                   height="25"
@@ -49,7 +48,7 @@ function Navbar() {
               </a>
               <a href="https://www.linkedin.com/in/farhan-mahbub/">
                 <svg
-                  className="fill-cyan-500 w-6 h-6"
+                  className="fill-blue-400 w-6 h-6"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
