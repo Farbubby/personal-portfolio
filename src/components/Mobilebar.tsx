@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { smoothScrollTo } from "../functions";
 
 interface Props {
@@ -7,9 +6,6 @@ interface Props {
 }
 
 function Mobilebar({ show, close }: Props) {
-  let sandcolorText =
-    " bg-blue-400 text-transparent bg-clip-text";
-
   let status = show
     ? " translate-x-0 duration-300"
     : " translate-x-full duration-300";
@@ -18,8 +14,7 @@ function Mobilebar({ show, close }: Props) {
     <>
       <button
         className={
-          "fixed z-30 p-6 text-3xl h-20 hover:text-white duration-200" +
-          sandcolorText +
+          "fixed z-30 p-6 text-3xl h-20 hover:text-white duration-200 text-blue-400" +
           status
         }
         onClick={() => close()}>
@@ -27,7 +22,7 @@ function Mobilebar({ show, close }: Props) {
       </button>
       <div
         className={
-          "flex flex-col px-8 text-xl gap-20 font-bold items-center justify-center z-20 fixed h-screen bg-gradient-to-t from-black via-gray-950 to-gray-800 w-2/3 sm:w-1/3" +
+          "flex flex-col px-8 text-xl gap-20 font-bold items-center justify-center z-20 fixed h-screen bg-gradient-to-t from-black via-gray-950 to-gray-800 w-2/3 sm:w-1/3 text-blue-400" +
           status
         }>
         <button
@@ -35,7 +30,7 @@ function Mobilebar({ show, close }: Props) {
             smoothScrollTo("home");
             close();
           }}
-          className={"hover:text-white duration-200" + sandcolorText}>
+          className={"hover:text-white duration-200"}>
           Home
         </button>
         <button
@@ -43,7 +38,7 @@ function Mobilebar({ show, close }: Props) {
             smoothScrollTo("about");
             close();
           }}
-          className={"hover:text-white duration-200" + sandcolorText}>
+          className={"hover:text-white duration-200"}>
           About Me
         </button>
         <button
@@ -51,12 +46,10 @@ function Mobilebar({ show, close }: Props) {
             smoothScrollTo("projects");
             close();
           }}
-          className={"hover:text-white duration-200" + sandcolorText}>
+          className={"hover:text-white duration-200"}>
           Projects
         </button>
-        <a
-          href="/resume.pdf"
-          className={"hover:text-white duration-200" + sandcolorText}>
+        <a href="/resume.pdf" className={"hover:text-white duration-200"}>
           Resume
         </a>
       </div>

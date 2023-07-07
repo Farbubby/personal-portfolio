@@ -4,12 +4,11 @@ import { smoothScrollTo } from "../functions";
 
 function Navbar() {
   const [toggleBar, setToggleBar] = useState(false);
-  let sandcolorText = " bg-blue-400 text-transparent bg-clip-text";
 
   return (
     <>
       <div className="flex flex-row-reverse px-4 items-center h-20 fixed w-full backdrop-blur z-10">
-        <div className={"flex flex-row gap-8 text-lg pr-2" + sandcolorText}>
+        <div className={"flex flex-row gap-8 text-lg pr-2 text-blue-400"}>
           <button
             className="md:hidden text-3xl"
             onClick={() => setToggleBar(!toggleBar)}>

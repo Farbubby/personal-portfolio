@@ -1,11 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-let sandcolorText =
+let sublime =
   " bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text";
 
 let projects =
-  " text-black bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl p-4 ease-in-out hover:scale-105 duration-200 max-w-lg";
+  " flex flex-col gap-3 text-black bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl p-4 ease-in-out hover:scale-105 duration-200 max-w-lg";
+
+let list = " flex flex-wrap font-bold text-sm italic gap-x-4 max-w-sm";
 ---
 
 <script>
@@ -18,8 +20,7 @@ let projects =
     <div
       id="home"
       class="flex flex-col h-screen justify-center mb-24 animate-fadeDown">
-      <div
-        class={"font-bold px-4 text-center" + sandcolorText}>
+      <div class={"font-bold px-4 text-center" + sublime}>
         <div class="text-4xl md:text-5xl">Welcome to my portfolio!</div>
         <div class="text-xl md:text-2xl mt-8">
           <div>My name is</div>
@@ -28,14 +29,12 @@ let projects =
       </div>
     </div>
 
-    <div id="about" class="flex flex-col mb-48 animate-fadeDown">
-      <div
-        class={"text-4xl md:text-5xl font-bold p-1 text-center" +
-          sandcolorText}>
+    <div id="about" class={"flex flex-col mb-48 animate-fadeDown" + sublime}>
+      <div class={"text-4xl md:text-5xl font-bold p-1 text-center"}>
         About me
       </div>
       <div class="flex flex-col px-8 mt-10 items-center">
-        <div class={"max-w-2xl text-lg" + sandcolorText}>
+        <div class={"max-w-2xl text-lg"}>
           <p class="mb-4">
             I am a student attending the University of Central Florida currently
             pursuing a major in Computer Science and a minor in Mathematics.
@@ -57,16 +56,14 @@ let projects =
       </div>
     </div>
 
-    <div id="projects" class="flex flex-col mb-48 animate-fadeDown">
-      <div
-        class={"text-4xl md:text-5xl font-bold p-1 text-center" +
-          sandcolorText}>
+    <div id="projects" class={"flex flex-col mb-48 animate-fadeDown"}>
+      <div class={"text-4xl md:text-5xl font-bold p-1 text-center" + sublime}>
         Projects
       </div>
       <div class="flex flex-col items-center">
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-x-10 gap-y-10 px-6">
-          <div class={"flex flex-col gap-3" + projects}>
+          <div class={projects}>
             <a
               href="https://github.com/FindMyProfessors"
               class="flex flex-row-reverse">
@@ -87,8 +84,7 @@ let projects =
               reviews, and adjective radar charts given a university name and a
               course code.
             </p>
-            <div
-              class="font-bold text-sm italic flex flex-wrap gap-x-4 max-w-sm">
+            <div class={list}>
               <div>Go</div>
               <div>GraphQL</div>
               <div>SQL</div>
@@ -96,7 +92,7 @@ let projects =
             </div>
           </div>
 
-          <div class={"flex flex-col gap-3" + projects}>
+          <div class={projects}>
             <a
               href="https://github.com/kylekaracadag/Stocks-Prediction"
               class="flex flex-row-reverse">
@@ -116,8 +112,7 @@ let projects =
               An LSTM model that predicts the closing price of a stock in one
               minute time intervals.
             </p>
-            <div
-              class="font-bold text-sm italic flex flex-wrap gap-x-4 max-w-sm">
+            <div class={list}>
               <div>Python</div>
               <div>TensorFlow</div>
               <div>Pandas</div>
@@ -126,7 +121,7 @@ let projects =
             </div>
           </div>
 
-          <div class={"flex flex-col gap-3" + projects}>
+          <div class={projects}>
             <a
               href="https://github.com/Farbubby/grocery-app"
               class="flex flex-row-reverse">
@@ -146,8 +141,7 @@ let projects =
               An app that displays a selection of food items of different types
               and the user has to login to manage and checkout their cart.
             </p>
-            <div
-              class="font-bold text-sm italic flex flex-wrap gap-x-4 max-w-sm">
+            <div class={list}>
               <div>TypeScript</div>
               <div>React</div>
               <div>TailwindCSS</div>
@@ -156,7 +150,7 @@ let projects =
             </div>
           </div>
 
-          <div class={"flex flex-col gap-3" + projects}>
+          <div class={projects}>
             <a
               href="https://github.com/Farbubby/build-a-forest"
               class="flex flex-row-reverse">
@@ -177,13 +171,12 @@ let projects =
               operations and queries using binary search trees and outputs each
               query result of the forest.
             </p>
-            <div
-              class="font-bold text-sm italic flex flex-wrap gap-x-4 max-w-sm">
+            <div class={list}>
               <div>C</div>
             </div>
           </div>
 
-          <div class={"flex flex-col gap-3" + projects}>
+          <div class={projects}>
             <a
               href="https://github.com/Farbubby/personnel-management-system"
               class="flex flex-row-reverse">
@@ -204,8 +197,7 @@ let projects =
               add and remove students/faculty, search for any person by ID, and
               print a list of students/faculty.
             </p>
-            <div
-              class="font-bold text-sm italic flex flex-wrap gap-x-4 max-w-sm">
+            <div class={list}>
               <div>Java</div>
             </div>
           </div>
