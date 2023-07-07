@@ -2,10 +2,10 @@
 import Layout from "../layouts/Layout.astro";
 
 let sandcolorText =
-  " bg-gradient-to-r from-red-500 to-orange-400 text-transparent bg-clip-text";
+  " bg-gradient-to-l from-blue-100 via-blue-300 to-blue-500 text-transparent bg-clip-text";
 
 let projects =
-  " text-pink-950 bg-gradient-to-r from-red-500 to-orange-400 rounded-xl p-4 ease-in-out hover:scale-105 hover:drop-shadow-glow duration-200 max-w-lg";
+  " text-pink-950 bg-gradient-to-l from-blue-100 via-blue-300 to-blue-500 rounded-xl p-4 ease-in-out hover:scale-105 duration-200 max-w-lg";
 ---
 
 <script>
@@ -19,7 +19,7 @@ let projects =
       id="home"
       class="flex flex-col h-screen justify-center mb-24 animate-fadeDown">
       <div
-        class={"drop-shadow-glow font-bold px-4 text-center" + sandcolorText}>
+        class={"font-bold px-4 text-center" + sandcolorText}>
         <div class="text-4xl md:text-5xl">Welcome to my portfolio!</div>
         <div class="text-xl md:text-2xl mt-8">
           <div>My name is</div>
@@ -30,12 +30,12 @@ let projects =
 
     <div id="about" class="flex flex-col mb-48 animate-fadeDown">
       <div
-        class={"text-4xl md:text-5xl drop-shadow-glow font-bold p-1 text-center" +
+        class={"text-4xl md:text-5xl font-bold p-1 text-center" +
           sandcolorText}>
         About me
       </div>
       <div class="flex flex-col px-8 mt-10 items-center">
-        <div class={"max-w-xl text-lg text-orange-300 drop-shadow-glow"}>
+        <div class={"max-w-2xl text-lg" + sandcolorText}>
           <p class="mb-4">
             I am a student attending the University of Central Florida currently
             pursuing a major in Computer Science and a minor in Mathematics.
@@ -45,7 +45,7 @@ let projects =
             favorite teachers back in highschool, I then realized that I enjoyed
             programming and its endless problem-solving and creativity. Fast
             forward, I am passionate about learning new technologies and
-            building projects..
+            building projects.
           </p>
           <p>
             I am interested to get into software engineering. More specifically,
@@ -59,7 +59,7 @@ let projects =
 
     <div id="projects" class="flex flex-col mb-48 animate-fadeDown">
       <div
-        class={"text-4xl md:text-5xl drop-shadow-glow font-bold p-1 text-center" +
+        class={"text-4xl md:text-5xl font-bold p-1 text-center" +
           sandcolorText}>
         Projects
       </div>

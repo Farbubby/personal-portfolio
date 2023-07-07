@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-row-reverse px-4 drop-shadow-glow items-center h-20 fixed w-full backdrop-blur z-10">
+      <div className="flex flex-row-reverse px-4 items-center h-20 fixed w-full backdrop-blur z-10">
         <div className={"flex flex-row gap-8 text-lg pr-2" + sandcolorText}>
           <button
             className="md:hidden text-3xl"
