@@ -8,7 +8,7 @@ interface Props {
 
 function Mobilebar({ show, close }: Props) {
   let sandcolorText =
-    " bg-gradient-to-r from-red-500 to-orange-400 text-transparent bg-clip-text";
+    " bg-blue-400 text-transparent bg-clip-text";
 
   let status = show
     ? " translate-x-0 duration-300"
