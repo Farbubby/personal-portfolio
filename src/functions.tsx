@@ -12,7 +12,7 @@ export function animateOnView() {
   const observer = new IntersectionObserver(animateOnScroll);
   const elements = document.querySelectorAll(".animate-fadeDown");
 
-  elements.forEach(function (target) {
+  elements.forEach((target) => {
     observer.observe(target);
   });
 }
