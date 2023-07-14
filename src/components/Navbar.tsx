@@ -14,10 +14,10 @@ function Navbar() {
             onClick={() => setToggleBar(!toggleBar)}>
             <svg
               className="stroke-blue-400 w-11 h-11 hover:fill-blue-400 duration-200"
-              clip-rule="evenodd"
-              fill-rule="evenodd"
-              stroke-linejoin="round"
-              stroke-miterlimit="2"
+              clipRule="evenodd"
+              fillRule="evenodd"
+              strokeLinejoin="round"
+              strokeMiterlimit="2"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path
