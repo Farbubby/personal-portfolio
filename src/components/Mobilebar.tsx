@@ -11,18 +11,18 @@ function Mobilebar({ show, close }: Props) {
     : " translate-x-full duration-300";
 
   let mobButton =
-    " hover:text-white px-2 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500";
+    " hover:text-white px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500";
 
   return (
     <>
       <div
         className={
-          "flex flex-col text-xl gap-20 font-bold z-20 fixed h-screen bg-gradient-to-tl from-gray-950 to-gray-900 w-2/3 sm:w-1/3 text-blue-400" +
+          "flex flex-col text-2xl gap-20 font-bold z-20 fixed h-screen bg-gradient-to-tl from-gray-950 to-gray-900 w-2/3 sm:w-1/3 text-blue-400" +
           status
         }>
         <button
           className={
-            "flex flex-row-reverse p-4 text-3xl hover:text-white duration-200 text-blue-400"
+            "flex flex-row-reverse p-4 hover:text-white duration-200 text-blue-400"
           }
           onClick={() => close()}>
           <svg
