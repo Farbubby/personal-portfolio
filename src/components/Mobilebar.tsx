@@ -22,7 +22,7 @@ function Mobilebar({ show, close }: Props) {
         }>
         <button
           className={
-            "flex flex-row-reverse p-5 text-3xl hover:text-white duration-200 text-blue-400"
+            "flex flex-row-reverse p-4 text-3xl hover:text-white duration-200 text-blue-400"
           }
           onClick={() => close()}>
           <svg
