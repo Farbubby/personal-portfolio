@@ -8,7 +8,7 @@ function Navbar() {
     " hover:text-white text-base px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500";
   return (
     <>
-      <div className="flex flex-row-reverse px-4 items-center h-16 fixed w-full backdrop-blur z-10">
+      <div className="flex flex-row-reverse px-4 items-center h-16 fixed w-full backdrop-blur z-10 drop-shadow-glow">
         <div className={"flex flex-row gap-8 text-lg pr-2 text-blue-400"}>
           <button
             className="md:hidden text-3xl"

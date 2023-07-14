@@ -7,7 +7,7 @@ interface Props {
 
 function Mobilebar({ show, close }: Props) {
   let status = show
-    ? " translate-x-0 duration-300"
+    ? " drop-shadow-glow translate-x-0 duration-300"
     : " translate-x-full duration-300";
 
   let mobButton =
@@ -22,7 +22,7 @@ function Mobilebar({ show, close }: Props) {
         }>
         <button
           className={
-            "flex flex-row-reverse p-4 hover:text-white duration-200 text-blue-400"
+            "flex flex-row-reverse p-4 hover:text-white duration-200 text-blue-400 drop-shadow-glow"
           }
           onClick={() => close()}>
           <svg
@@ -39,7 +39,7 @@ function Mobilebar({ show, close }: Props) {
             />
           </svg>
         </button>
-        <div className="flex flex-col items-center gap-16">
+        <div className="flex flex-col items-center gap-16 drop-shadow-glow">
           <button
             onClick={() => {
               smoothScrollTo("home");
@@ -68,7 +68,7 @@ function Mobilebar({ show, close }: Props) {
             Resume
           </a>
         </div>
-        <div className="flex gap-3 items-center justify-center">
+        <div className="flex gap-3 items-center justify-center drop-shadow-glow">
           <a href="https://github.com/Farbubby">
             <svg
               className="fill-blue-400 w-9 h-9"
