@@ -37,12 +37,17 @@ function Navbar() {
             <button
               onClick={() => smoothScrollTo("about")}
               className={navButton}>
-              About Me
+              About
             </button>
             <button
               onClick={() => smoothScrollTo("projects")}
               className={navButton}>
               Projects
+            </button>
+            <button
+              onClick={() => smoothScrollTo("contact")}
+              className={navButton}>
+              Contact
             </button>
             <a href="/resume.pdf" className={navButton}>
               Resume
