@@ -11,7 +11,7 @@ function Navbar() {
       <div className="flex flex-row-reverse px-4 items-center h-16 fixed w-full backdrop-blur z-10">
         <div className={"flex flex-row gap-8 text-lg pr-2 text-blue-400"}>
           <button
-            className="md:hidden text-3xl"
+            className="md:hidden text-3xl drop-shadow-glow"
             onClick={() => setToggleBar(!toggleBar)}>
             <svg
               className="stroke-blue-400 w-11 h-11 hover:fill-blue-400 duration-200"
