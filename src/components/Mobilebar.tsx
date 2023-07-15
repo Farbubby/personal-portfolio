@@ -26,7 +26,7 @@ function Mobilebar({ show, close }: Props) {
           }
           onClick={() => close()}>
           <svg
-            className="stroke-blue-400 w-11 h-11 hover:fill-blue-400 duration-200"
+            className="stroke-blue-400 w-11 h-11 hover:fill-blue-400"
             clipRule="evenodd"
             fillRule="evenodd"
             strokeLinejoin="round"
