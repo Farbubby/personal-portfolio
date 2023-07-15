@@ -7,11 +7,11 @@ interface Props {
 
 function Mobilebar({ show, close }: Props) {
   let status = show
-    ? " drop-shadow-glow translate-x-0 duration-300"
+    ? " translate-x-0 duration-300"
     : " translate-x-full duration-300";
 
   let mobButton =
-    " hover:text-white px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500";
+    " hover:text-white px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500 drop-shadow-glow";
 
   return (
     <>
@@ -39,7 +39,7 @@ function Mobilebar({ show, close }: Props) {
             />
           </svg>
         </button>
-        <div className="flex flex-col items-center gap-16 drop-shadow-glow">
+        <div className="flex flex-col items-center gap-16">
           <button
             onClick={() => {
               smoothScrollTo("home");

@@ -5,10 +5,10 @@ import { smoothScrollTo } from "../functions";
 function Navbar() {
   const [toggleBar, setToggleBar] = useState(false);
   let navButton =
-    " hover:text-white text-base px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500";
+    " hover:text-white text-base px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500 drop-shadow-glow";
   return (
     <>
-      <div className="flex flex-row-reverse px-4 items-center h-16 fixed w-full backdrop-blur z-10 drop-shadow-glow">
+      <div className="flex flex-row-reverse px-4 items-center h-16 fixed w-full backdrop-blur z-10">
         <div className={"flex flex-row gap-8 text-lg pr-2 text-blue-400"}>
           <button
             className="md:hidden text-3xl"
@@ -47,7 +47,7 @@ function Navbar() {
             <a href="/resume.pdf" className={navButton}>
               Resume
             </a>
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-3 items-center drop-shadow-glow">
               <a href="https://github.com/Farbubby">
                 <svg
                   className="fill-blue-400 w-6 h-6"
