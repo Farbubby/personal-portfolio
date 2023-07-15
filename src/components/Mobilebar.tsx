@@ -17,7 +17,7 @@ function Mobilebar({ show, close }: Props) {
     <>
       <div
         className={
-          "flex flex-col text-xl gap-12 font-bold z-20 fixed h-screen bg-gradient-to-tl from-gray-950 to-gray-900 w-2/3 sm:w-1/3 text-blue-400" +
+          "flex flex-col text-xl gap-12 font-bold z-20 fixed h-screen border-l bg-gray-950 w-2/3 sm:w-1/3 text-blue-400" +
           status
         }>
         <button
