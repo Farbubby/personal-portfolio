@@ -23,3 +23,9 @@ export function smoothScrollTo(id: string) {
 
   window.scrollTo({ behavior: "smooth", top: element.offsetTop - 90 });
 }
+
+export function smoothScrollToBottom() {
+  if (window == null) return;
+
+  window.scrollTo({ behavior: "smooth", top: document.body.scrollHeight });
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Mobilebar from "./Mobilebar";
-import { smoothScrollTo } from "../functions";
+import { smoothScrollTo, smoothScrollToBottom } from "../functions";
 
 function Navbar() {
   const [toggleBar, setToggleBar] = useState(false);
@@ -45,7 +45,7 @@ function Navbar() {
               Projects
             </button>
             <button
-              onClick={() => smoothScrollTo("contact")}
+              onClick={() => smoothScrollToBottom()}
               className={navButton}>
               Contact
             </button>
