@@ -11,7 +11,7 @@ function Mobilebar({ show, close }: Props) {
     : " translate-x-full duration-300";
 
   let mobButton =
-    " hover:text-white px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500 drop-shadow-glow";
+    " text-white rounded-2xl drop-shadow-glow border-2 border-blue-400 px-3 py-1 bg-gradient-to-br from-rose-400 via-fuchsia-500 to-indigo-500";
 
   return (
     <>
