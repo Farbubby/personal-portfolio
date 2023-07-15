@@ -3,14 +3,12 @@ export function animateOnView() {
     elements.forEach((element: any) => {
       if (element.isIntersecting) {
         element.target.classList.add("animate-fadeDown");
-      } else {
-        element.target.classList.remove("animate-fadeDown");
       }
     });
   };
 
   const observer = new IntersectionObserver(animateOnScroll);
-  const elements = document.querySelectorAll(".animate-fadeDown");
+  const elements = document.querySelectorAll(".animate");
 
   elements.forEach((target) => {
     observer.observe(target);
