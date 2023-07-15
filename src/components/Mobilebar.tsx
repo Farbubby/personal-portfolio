@@ -54,7 +54,7 @@ function Mobilebar({ show, close }: Props) {
               close();
             }}
             className={mobButton}>
-            About Me
+            About
           </button>
           <button
             onClick={() => {
