@@ -5,7 +5,7 @@ import { smoothScrollTo, smoothScrollToBottom } from "../functions";
 function Navbar() {
   const [toggleBar, setToggleBar] = useState(false);
   let navButton =
-    " hover:text-white text-base px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500 drop-shadow-glow";
+    " hover:text-white text-base px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500 drop-shadow-glow hover:border-2 border-blue-400";
   return (
     <>
       <div className="flex flex-row-reverse px-4 items-center h-16 fixed w-full backdrop-blur z-10">
