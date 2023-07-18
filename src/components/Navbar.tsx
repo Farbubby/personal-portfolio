@@ -21,10 +21,10 @@ function Navbar() {
 
   let showNavBar =
     status && y != 0
-      ? " translate-y-0 duration-300"
+      ? " translate-y-0 ease-in-out duration-300"
       : y == 0
-      ? " translate-y-0 duration-300"
-      : " -translate-y-full duration-300";
+      ? " translate-y-0 ease-in-out duration-300"
+      : " -translate-y-full ease-in-out duration-300";
 
   let navButton =
     " hover:text-white text-base px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500 drop-shadow-glow hover:border-2 border-blue-400";

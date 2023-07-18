@@ -16,8 +16,8 @@ function Mobilebar({ status, close }: Props) {
   }, [() => close()]);
 
   let showMobileBar = status
-    ? " translate-x-0 duration-300"
-    : " translate-x-full duration-300";
+    ? " translate-x-0 ease-in-out duration-300"
+    : " translate-x-full ease-in-out duration-300";
 
   let mobButton =
     " text-white rounded-2xl drop-shadow-glow border-2 border-blue-400 px-3 py-1 bg-gradient-to-br from-rose-400 via-fuchsia-500 to-indigo-500";
