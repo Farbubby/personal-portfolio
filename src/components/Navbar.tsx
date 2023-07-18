@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Mobilebar from "./Mobilebar";
-import { smoothScrollTo, smoothScrollToBottom } from "../functions";
+import { disableScroll, smoothScrollTo, smoothScrollToBottom } from "../functions";
 
 function Navbar() {
   const [toggleBar, setToggleBar] = useState(false);
@@ -12,7 +12,10 @@ function Navbar() {
         <div className={"flex flex-row gap-8 text-lg pr-2 text-blue-400"}>
           <button
             className="md:hidden text-3xl drop-shadow-glow"
-            onClick={() => setToggleBar(!toggleBar)}>
+            onClick={() => {
+              setToggleBar(!toggleBar);
+              disableScroll();
+            }}>
             <svg
               className="stroke-blue-400 w-11 h-11 hover:fill-blue-400"
               clipRule="evenodd"

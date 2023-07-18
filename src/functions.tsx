@@ -29,3 +29,11 @@ export function smoothScrollToBottom() {
 
   window.scrollTo({ behavior: "smooth", top: document.body.scrollHeight });
 }
+
+export function disableScroll() {
+  document.body.style.overflow = "hidden";
+}
+
+export function enableScroll() {
+  document.body.style.overflow = "auto";
+}

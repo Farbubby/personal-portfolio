@@ -1,4 +1,4 @@
-import { smoothScrollTo, smoothScrollToBottom } from "../functions";
+import { enableScroll, smoothScrollTo, smoothScrollToBottom } from "../functions";
 
 interface Props {
   show: boolean;
@@ -24,7 +24,10 @@ function Mobilebar({ show, close }: Props) {
           className={
             "flex flex-row-reverse p-4 hover:text-white duration-200 text-blue-400 drop-shadow-glow"
           }
-          onClick={() => close()}>
+          onClick={() => {
+            close();
+            enableScroll();
+          }}>
           <svg
             className="stroke-blue-400 w-11 h-11 hover:fill-blue-400"
             clipRule="evenodd"
