@@ -1,8 +1,6 @@
-import {
-  enableScroll,
-  smoothScrollTo,
-  smoothScrollToBottom,
-} from "../functions";
+import { smoothScrollTo, smoothScrollToBottom } from "../functions";
+
+import { useEffect } from "react";
 
 interface Props {
   status: boolean;
@@ -10,6 +8,13 @@ interface Props {
 }
 
 function Mobilebar({ status, close }: Props) {
+  useEffect(() => {
+    window.addEventListener("scroll", () => close());
+    return () => {
+      window.removeEventListener("scroll", () => close());
+    };
+  }, [() => close()]);
+
   let showMobileBar = status
     ? " translate-x-0 duration-300"
     : " translate-x-full duration-300";
@@ -30,7 +35,6 @@ function Mobilebar({ status, close }: Props) {
           }
           onClick={() => {
             close();
-            enableScroll();
           }}>
           <svg
             className="stroke-blue-400 w-11 h-11 hover:fill-blue-400"

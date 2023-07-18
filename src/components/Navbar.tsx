@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import Mobilebar from "./Mobilebar";
-import {
-  disableScroll,
-  smoothScrollTo,
-  smoothScrollToBottom,
-} from "../functions";
+import { smoothScrollTo, smoothScrollToBottom } from "../functions";
 
 function Navbar() {
   const [y, setY] = useState(0);
@@ -44,7 +40,6 @@ function Navbar() {
             className="md:hidden text-3xl drop-shadow-glow"
             onClick={() => {
               setToggleBar(true);
-              disableScroll();
             }}>
             <svg
               className="stroke-blue-400 w-11 h-11 hover:fill-blue-400"
