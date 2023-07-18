@@ -8,7 +8,11 @@ function Navbar() {
   const [toggleBar, setToggleBar] = useState(false);
 
   const changeNav = () => {
-    window.scrollY > y ? setStatus(false) : setStatus(true);
+    window.scrollY > y ||
+    window.innerHeight + Math.round(window.scrollY) >=
+      document.body.offsetHeight
+      ? setStatus(false)
+      : setStatus(true);
     setY(window.scrollY);
   };
 
