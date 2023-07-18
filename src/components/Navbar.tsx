@@ -1,19 +1,49 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Mobilebar from "./Mobilebar";
-import { disableScroll, smoothScrollTo, smoothScrollToBottom } from "../functions";
+import {
+  disableScroll,
+  smoothScrollTo,
+  smoothScrollToBottom,
+} from "../functions";
 
 function Navbar() {
+  const [y, setY] = useState(0);
+  const [status, setStatus] = useState(false);
   const [toggleBar, setToggleBar] = useState(false);
+
+  const changeNav = () => {
+    window.scrollY > y ? setStatus(false) : setStatus(true);
+    setY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+    return () => {
+      window.removeEventListener("scroll", changeNav);
+    };
+  }, [changeNav]);
+
+  let showNavBar =
+    status && y != 0
+      ? " translate-y-0 duration-300"
+      : y == 0
+      ? " translate-y-0 duration-300"
+      : " -translate-y-full duration-300";
+
   let navButton =
     " hover:text-white text-base px-3 py-1 rounded-xl hover:bg-gradient-to-br hover:from-rose-400 hover:via-fuchsia-500 hover:to-indigo-500 drop-shadow-glow hover:border-2 border-blue-400";
   return (
     <>
-      <div className="flex flex-row-reverse px-4 items-center h-16 fixed w-full backdrop-blur z-10">
+      <div
+        className={
+          "flex flex-row-reverse px-4 items-center h-16 fixed w-full backdrop-blur z-10" +
+          showNavBar
+        }>
         <div className={"flex flex-row gap-8 text-lg pr-2 text-blue-400"}>
           <button
             className="md:hidden text-3xl drop-shadow-glow"
             onClick={() => {
-              setToggleBar(!toggleBar);
+              setToggleBar(true);
               disableScroll();
             }}>
             <svg
@@ -81,7 +111,7 @@ function Navbar() {
         </div>
       </div>
       <div className="flex flex-row-reverse">
-        <Mobilebar show={toggleBar} close={() => setToggleBar(false)} />
+        <Mobilebar status={toggleBar} close={() => setToggleBar(false)} />
       </div>
     </>
   );

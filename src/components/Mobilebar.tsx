@@ -1,12 +1,16 @@
-import { enableScroll, smoothScrollTo, smoothScrollToBottom } from "../functions";
+import {
+  enableScroll,
+  smoothScrollTo,
+  smoothScrollToBottom,
+} from "../functions";
 
 interface Props {
-  show: boolean;
+  status: boolean;
   close: () => void;
 }
 
-function Mobilebar({ show, close }: Props) {
-  let status = show
+function Mobilebar({ status, close }: Props) {
+  let showMobileBar = status
     ? " translate-x-0 duration-300"
     : " translate-x-full duration-300";
 
@@ -18,7 +22,7 @@ function Mobilebar({ show, close }: Props) {
       <div
         className={
           "flex flex-col text-xl gap-12 font-bold z-20 fixed h-screen border-l bg-gray-950 w-2/3 sm:w-1/3 text-blue-400" +
-          status
+          showMobileBar
         }>
         <button
           className={
