@@ -50,15 +50,7 @@ function Mobilebar({ status, close }: Props) {
             />
           </svg>
         </button>
-        <div className="flex flex-col items-center gap-14">
-          <button
-            onClick={() => {
-              smoothScrollTo("home");
-              close();
-            }}
-            className={mobButton}>
-            Home
-          </button>
+        <div className="flex flex-col items-center gap-20">
           <button
             onClick={() => {
               smoothScrollTo("about");

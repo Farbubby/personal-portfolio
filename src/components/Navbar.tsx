@@ -62,11 +62,6 @@ function Navbar() {
           <div
             className={"md:flex flex-row gap-6 hidden font-bold items-center"}>
             <button
-              onClick={() => smoothScrollTo("home")}
-              className={navButton}>
-              Home
-            </button>
-            <button
               onClick={() => smoothScrollTo("about")}
               className={navButton}>
               About

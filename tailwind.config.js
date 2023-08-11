@@ -11,21 +11,16 @@ export default {
       },
       animation: {
         fadeDown: "fadeDown 1s ease-in-out",
-        fadeIn: "fadeIn 0.5s ease-in-out",
-        fadeOut: "fadeOut 0.5s ease-in-out",
+        fadeUp: "fadeUp 1s ease-in-out",
       },
       keyframes: {
         fadeDown: {
           "0%": { transform: "translateY(-1rem)", opacity: 0 },
           "100%": { transform: "translateY(0rem)", opacity: 1 },
         },
-        fadeIn: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 },
-        },
-        fadeOut: {
-          "0%": { opacity: 1 },
-          "100%": { opacity: 0 },
+        fadeUp: {
+          "0%": { transform: "translateY(1rem)", opacity: 0 },
+          "100%": { transform: "translateY(0rem)", opacity: 1 },
         },
       },
     },

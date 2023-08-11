@@ -5,12 +5,10 @@ function Home() {
   return (
     <div
       id="home"
-      className="flex flex-col h-screen justify-center text-center mb-28 opacity-0 animate">
-      <div className={"font-bold px-4" + sublime}>
-        <div className="text-4xl md:text-5xl">Welcome to my portfolio!</div>
-        <div className="text-xl md:text-2xl mt-4">
-          <div>My name is Farhan Mahbub</div>
-        </div>
+      className="flex flex-col h-screen justify-center text-center mb-28">
+      <div className={"font-bold px-4"}>
+        <div className={"text-4xl md:text-5xl animate-down" + sublime}>Welcome to my portfolio!</div>
+        <div className={"text-xl md:text-2xl mt-4 animate-up" + sublime}>My name is Farhan Mahbub</div>
       </div>
     </div>
   );
