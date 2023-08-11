@@ -3,12 +3,12 @@ function Projects() {
     " bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text";
 
   let projects =
-    " flex flex-col gap-3 border-2 border-blue-400 text-white bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl p-4 ease-in-out hover:scale-105 duration-200 max-w-lg animate";
+    " flex flex-col gap-3 border-2 border-blue-400 text-white bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl p-4 ease-in-out hover:scale-105 duration-200 max-w-lg animate opacity-0";
 
   let list = " flex flex-wrap font-bold text-sm italic gap-x-4 max-w-sm";
 
   return (
-    <div id="projects" className={"flex flex-col mb-48 animate"}>
+    <div id="projects" className={"flex flex-col mb-48 animate opacity-0"}>
       <div
         className={
           "text-4xl md:text-5xl font-bold p-1 text-center" +

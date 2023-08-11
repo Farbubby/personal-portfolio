@@ -2,6 +2,7 @@ export function animateOnView() {
   const animateOnScroll = (elements: any) => {
     elements.forEach((element: any) => {
       if (element.isIntersecting) {
+        element.target.classList.remove("opacity-0");
         element.target.classList.add("animate-fadeDown");
       }
     });

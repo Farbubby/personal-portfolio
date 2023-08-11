@@ -5,7 +5,7 @@ function Home() {
   return (
     <div
       id="home"
-      className="flex flex-col h-screen justify-center text-center mb-28 animate">
+      className="flex flex-col h-screen justify-center text-center mb-28 opacity-0 animate">
       <div className={"font-bold px-4" + sublime}>
         <div className="text-4xl md:text-5xl">Welcome to my portfolio!</div>
         <div className="text-xl md:text-2xl mt-4">

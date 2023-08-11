@@ -5,7 +5,7 @@ function About() {
   return (
     <div
       id="about"
-      className={"flex flex-col mb-48 animate" + sublime}>
+      className={"flex flex-col mb-48 animate opacity-0" + sublime}>
       <div className={"text-4xl md:text-5xl font-bold p-1 text-center"}>
         About me
       </div>

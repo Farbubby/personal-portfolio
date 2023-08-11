@@ -9,7 +9,7 @@ function Contact() {
     <div
       id="contact"
       className={
-        "flex flex-col h-screen justify-center animate" +
+        "flex flex-col h-screen justify-center animate opacity-0" +
         sublime
       }>
       <div className={"text-4xl md:text-5xl font-bold p-1 text-center"}>
