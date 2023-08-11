@@ -87,7 +87,7 @@ function Navbar() {
             <div className="flex gap-3 items-center">
               <a href="https://github.com/Farbubby">
                 <svg
-                  className="fill-blue-400 w-6 h-6"
+                  className="fill-blue-400 w-6 h-6 hover:fill-white duration-200"
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
                   height="25"
@@ -97,7 +97,7 @@ function Navbar() {
               </a>
               <a href="https://www.linkedin.com/in/farhan-mahbub/">
                 <svg
-                  className="fill-blue-400 w-6 h-6"
+                  className="fill-blue-400 w-6 h-6 hover:fill-white duration-200"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"

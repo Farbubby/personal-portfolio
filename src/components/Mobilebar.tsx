@@ -20,7 +20,7 @@ function Mobilebar({ status, close }: Props) {
     : " translate-x-full ease-in-out duration-300";
 
   let mobButton =
-    " text-blue-400 rounded-2xl border-blue-400 px-3 py-1";
+    " text-blue-400 rounded-2xl border-blue-400 px-3 py-1 hover:text-white";
 
   return (
     <>
@@ -89,7 +89,7 @@ function Mobilebar({ status, close }: Props) {
           <div className="flex gap-3 items-center justify-center">
             <a href="https://github.com/Farbubby">
               <svg
-                className="fill-blue-400 w-9 h-9"
+                className="fill-blue-400 w-9 h-9 hover:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
                 height="25"
@@ -99,7 +99,7 @@ function Mobilebar({ status, close }: Props) {
             </a>
             <a href="https://www.linkedin.com/in/farhan-mahbub/">
               <svg
-                className="fill-blue-400 w-9 h-9"
+                className="fill-blue-400 w-9 h-9 hover:fill-white"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
