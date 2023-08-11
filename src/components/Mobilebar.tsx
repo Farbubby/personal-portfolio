@@ -20,7 +20,7 @@ function Mobilebar({ status, close }: Props) {
     : " translate-x-full ease-in-out duration-300";
 
   let mobButton =
-    " text-white rounded-2xl drop-shadow-glow border-2 border-blue-400 px-3 py-1 bg-gradient-to-br from-rose-400 via-fuchsia-500 to-indigo-500";
+    " text-blue-400 rounded-2xl border-blue-400 px-3 py-1";
 
   return (
     <>
@@ -31,7 +31,7 @@ function Mobilebar({ status, close }: Props) {
         }>
         <button
           className={
-            "flex flex-row-reverse p-4 hover:text-white duration-200 text-blue-400 drop-shadow-glow"
+            "flex flex-row-reverse p-4 hover:text-white duration-200 text-blue-400"
           }
           onClick={() => {
             close();
@@ -86,7 +86,7 @@ function Mobilebar({ status, close }: Props) {
           <a href="/resume.pdf" className={mobButton}>
             Resume
           </a>
-          <div className="flex gap-3 items-center justify-center drop-shadow-glow">
+          <div className="flex gap-3 items-center justify-center">
             <a href="https://github.com/Farbubby">
               <svg
                 className="fill-blue-400 w-9 h-9"
