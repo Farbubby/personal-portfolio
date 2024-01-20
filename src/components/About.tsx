@@ -1,12 +1,14 @@
 function About() {
   let sublime =
-    " bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text";
+    " bg-gradient-to-t from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text drop-shadow-glow";
 
   return (
-    <div
-      id="about"
-      className={"flex flex-col mb-48"}>
-      <div className={"text-4xl md:text-5xl font-bold p-1 text-center animate-down" + sublime}>
+    <div id="about" className={"flex flex-col mb-48"}>
+      <div
+        className={
+          "text-4xl md:text-5xl font-bold p-1 text-center animate-down" +
+          sublime
+        }>
         About me
       </div>
       <div className="flex flex-col px-8 mt-10 items-center">
