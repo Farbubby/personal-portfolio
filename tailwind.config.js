@@ -23,6 +23,9 @@ export default {
           "100%": { transform: "translateY(0rem)", opacity: 1 },
         },
       },
+      fontFamily: {
+        happyMonkey: ["Happy Monkey", "system-ui"],
+      },
     },
   },
   plugins: [],
