@@ -14,7 +14,7 @@ function Navbar() {
   ]);
   const [svgList, setSvgList] = useState([
     <svg
-      className="fill-fuchsia-500 w-6 h-6 hover:fill-white duration-200"
+      className="fill-fuchsia-400 w-6 h-6 hover:fill-white duration-200"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -22,7 +22,7 @@ function Navbar() {
       <path d="M16.5 12.5c0 .828-.56 1.5-1.25 1.5s-1.25-.672-1.25-1.5.56-1.5 1.25-1.5 1.25.672 1.25 1.5zm-7.75-1.5c-.69 0-1.25.672-1.25 1.5s.56 1.5 1.25 1.5 1.25-.672 1.25-1.5-.56-1.5-1.25-1.5zm3.25 5.357c-2.375-1.454-1.689 2.095-5 .639.5 2.012 3.506 2.353 5 1.141 1.494 1.212 4.5.871 5-1.141-3.311 1.457-2.625-2.092-5-.639zm12-3.044c0 1.765-.985 3.991-3.139 4.906-2.05 3.274-4.975 5.781-8.861 5.781-3.749 0-6.858-2.582-8.862-5.781-2.153-.916-3.138-3.142-3.138-4.906 0-1.995.811-3.774 2.683-3.959l.03-.028.003-.02c-.25-1.945-.338-4.92.719-6.047.568-.605 1.217-.839 2.047-.565 1.294-1.765 3.454-2.694 6.372-2.694 4.646 0 6.552 2.417 8.177 4.46.893 1.123 1.969 2.248 3.969 2.186-.809.758-1.779 1.354-2.832 1.795.051.301.093.604.122.907 1.85.165 2.71 1.905 2.71 3.965zm-2.58-1.866c-.235-.153-.53-.116-.671-.053-.66.293-1.406-.192-1.406-.914 0-.479-.035-.957-.1-1.43-4.099.928-8.743-.231-10.368-3.467-2.375.375-3.85 2.356-4.229 5.021h-.004c-.087.683-.785 1.059-1.39.79-.141-.062-.436-.1-.672.053-1 .651-.893 4.184 1.554 5.012.224.076.413.228.535.43 1.708 2.829 4.015 5.111 7.331 5.111 3.318 0 5.624-2.284 7.331-5.111.123-.202.313-.354.536-.43 2.448-.829 2.553-4.364 1.553-5.012z" />
     </svg>,
     <svg
-      className="fill-fuchsia-500 w-6 h-6 hover:fill-white duration-200"
+      className="fill-fuchsia-400 w-6 h-6 hover:fill-white duration-200"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -30,7 +30,7 @@ function Navbar() {
       <path d="M22 1h-20v14h20v-14zm-2 12h-16v-10h16v10zm2 3h-20l-2 7h24l-2-7zm-12.228 6l.466-2h3.524l.466 2h-4.456z" />
     </svg>,
     <svg
-      className="fill-fuchsia-500 w-6 h-6 hover:fill-white duration-200"
+      className="fill-fuchsia-400 w-6 h-6 hover:fill-white duration-200"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -38,7 +38,7 @@ function Navbar() {
       <path d="M23 0l-4.5 16.5-6.097-5.43 5.852-6.175-7.844 5.421-5.411-1.316 18-9zm-11 12.501v5.499l2.193-3.323-2.193-2.176zm-8.698 6.825l-1.439-.507 5.701-5.215 1.436.396-5.698 5.326zm3.262 4.287l-1.323-.565 4.439-4.503 1.32.455-4.436 4.613zm-4.083.387l-1.481-.507 8-7.89 1.437.397-7.956 8z" />
     </svg>,
     <svg
-      className="fill-fuchsia-500 w-6 h-6 hover:fill-white duration-200"
+      className="fill-fuchsia-400 w-6 h-6 hover:fill-white duration-200"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -57,7 +57,7 @@ function Navbar() {
       : " -translate-y-full ease-in-out duration-300";
 
   let sublime =
-    " bg-gradient-to-t from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text";
+    " bg-gradient-to-t from-rose-400 via-fuchsia-400 to-indigo-400 text-transparent bg-clip-text";
 
   let navButton =
     " hover:text-white px-3 py-1 rounded-xl duration-200 font-bold text-md drop-shadow-glow" +
@@ -113,7 +113,7 @@ function Navbar() {
         </a>
         <a href="https://github.com/Farbubby" className={navButton}>
           <svg
-            className="fill-fuchsia-500 w-6 h-6 hover:fill-white duration-200"
+            className="fill-fuchsia-400 w-6 h-6 hover:fill-white duration-200"
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="25"
@@ -125,7 +125,7 @@ function Navbar() {
           href="https://www.linkedin.com/in/farhan-mahbub/"
           className={navButton}>
           <svg
-            className="fill-fuchsia-500 w-6 h-6 hover:fill-white duration-200"
+            className="fill-fuchsia-400 w-6 h-6 hover:fill-white duration-200"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
