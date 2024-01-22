@@ -6,7 +6,7 @@ function Navbar() {
   const [y, setY] = useState(0);
   const [scrollStatus, setScrollStatus] = useState(false);
   const [mobile, setMobile] = useState(false);
-  const [large, setLarge] = useState([
+  const [sectionList, setSectionList] = useState([
     "About",
     "Projects",
     "Contact",
@@ -98,18 +98,18 @@ function Navbar() {
           arrange
         }>
         <button onClick={() => smoothScrollTo("about")} className={navButton}>
-          {mobile ? svgList[0] : large[0]}
+          {mobile ? svgList[0] : sectionList[0]}
         </button>
         <button
           onClick={() => smoothScrollTo("projects")}
           className={navButton}>
-          {mobile ? svgList[1] : large[1]}
+          {mobile ? svgList[1] : sectionList[1]}
         </button>
         <button onClick={() => smoothScrollToBottom()} className={navButton}>
-          {mobile ? svgList[2] : large[2]}
+          {mobile ? svgList[2] : sectionList[2]}
         </button>
         <a href="/resume.pdf" className={navButton}>
-          {mobile ? svgList[3] : large[3]}
+          {mobile ? svgList[3] : sectionList[3]}
         </a>
         <a href="https://github.com/Farbubby" className={navButton}>
           <svg

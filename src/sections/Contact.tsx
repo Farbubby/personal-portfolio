@@ -6,7 +6,9 @@ function Contact() {
     " flex flex-col gap-3 border-2 border-blue-400 text-white bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl p-4 ease-in-out hover:scale-105 duration-200 max-w-lg animate-up opacity-0";
 
   return (
-    <div id="contact" className={"flex flex-col h-screen justify-center"}>
+    <div
+      id="contact"
+      className={"flex flex-col h-screen justify-center px-8 gap-10"}>
       <div
         className={
           "text-4xl md:text-5xl font-bold p-1 text-center animate-down opacity-0" +
@@ -14,7 +16,7 @@ function Contact() {
         }>
         Contact me
       </div>
-      <div className="flex flex-col px-8 mt-10 items-center">
+      <div className="flex flex-col items-center">
         <div className={"max-w-lg text-lg"}>
           <p
             className={
@@ -28,7 +30,7 @@ function Contact() {
         <a
           href="mailto:farhanmahbub88@gmail.com"
           className={
-            "mt-10 items-center duration-75 drop-shadow-glow" + button
+            "mt-10 items-center duration-75 hover:drop-shadow-glow" + button
           }>
           Contact
         </a>

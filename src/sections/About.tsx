@@ -3,15 +3,14 @@ function About() {
     " bg-gradient-to-t from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text drop-shadow-glow";
 
   return (
-    <div id="about" className={"flex flex-col mb-48"}>
-      <div
-        className={
-          "text-4xl md:text-5xl font-bold p-1 text-center animate-down" +
-          sublime
-        }>
-        About me
-      </div>
-      <div className="flex flex-col px-8 mt-10 items-center">
+    <div id="about" className={"flex flex-col mt-8"}>
+      <div className="flex flex-col gap-10 w-fit">
+        <div
+          className={
+            "text-4xl md:text-5xl font-bold p-1 animate-down" + sublime
+          }>
+          About me
+        </div>
         <div className={"max-w-2xl text-lg"}>
           <p className={"mb-4 animate-up text-fuchsia-400 drop-shadow-glow"}>
             Hello! I am a student attending the University of Central Florida

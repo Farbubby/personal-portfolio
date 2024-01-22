@@ -5,16 +5,16 @@ function Projects() {
     " bg-gradient-to-t from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text drop-shadow-glow";
 
   return (
-    <div id="projects" className={"flex flex-col mb-48"}>
-      <div
-        className={
-          "text-4xl md:text-5xl font-bold p-1 text-center animate-down opacity-0" +
-          sublime
-        }>
-        Projects
-      </div>
-      <div className="flex flex-col items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-8 px-8 md:px-14 lg:px-20">
+    <div id="projects" className={"flex flex-col"}>
+      <div className="flex flex-col w-fit gap-10">
+        <div
+          className={
+            "text-4xl md:text-5xl font-bold p-1 animate-down opacity-0 text-left py-2" +
+            sublime
+          }>
+          Projects
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           <Project
             name="Find My Professor"
             description="An app that provides a list of professors with average ratings, reviews, and adjective radar charts given a university name and a course code."
