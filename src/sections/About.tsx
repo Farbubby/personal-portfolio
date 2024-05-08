@@ -19,7 +19,7 @@ function About() {
           </p>
           <p className={"mb-4 animate-up text-fuchsia-400 drop-shadow-glow"}>
             My programming voyage started when I learned Java from one of my
-            favorite teacher back in highschool, I then realized that I enjoyed
+            favorite teachers back in highschool, I then realized that I enjoyed
             programming and its endless problem-solving and creativity. Fast
             forward, I am passionate about learning new technologies and
             building projects.
