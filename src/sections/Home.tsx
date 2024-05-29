@@ -5,15 +5,12 @@ function Home() {
   return (
     <div
       id="home"
-      className="flex flex-col h-screen justify-center sm:mx-28 px-8">
+      className="flex flex-col h-screen justify-center items-center">
       <div
         className={
-          "flex flex-col md:flex-row font-bold items-center justify-between gap-8 text-center md:text-left"
+          "flex flex-col md:flex-row font-bold items-center justify-between gap-8 text-center md:text-left w-3/4"
         }>
-        <div
-          className={
-            "flex flex-col text-4xl md:text-5xl lg:text-6xl gap-8 mt-24 md:mt-0"
-          }>
+        <div className={"flex flex-col text-4xl md:text-5xl lg:text-6xl gap-8"}>
           <p className={"py-2 animate-down" + sublime}>Welcome!</p>
           <div className="animate-up">
             <p className={"lg:text-2xl md:text-xl text-lg" + sublime}>

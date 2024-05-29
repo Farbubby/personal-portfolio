@@ -3,7 +3,7 @@ function About() {
     " bg-gradient-to-t from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text drop-shadow-glow";
 
   return (
-    <div id="about" className={"flex flex-col mt-8"}>
+    <div id="about" className={"flex flex-col"}>
       <div className="flex flex-col gap-10 w-fit">
         <div
           className={
