@@ -11,8 +11,8 @@ function Home() {
           "flex flex-col md:flex-row font-bold items-center justify-between gap-8 text-center md:text-left w-3/4"
         }>
         <div className={"flex flex-col text-4xl md:text-5xl lg:text-6xl gap-8"}>
-          <p className={"py-2 animate-down" + sublime}>Welcome!</p>
-          <div className="animate-up">
+          <p className={"py-2 animate-down opacity-0" + sublime}>Welcome!</p>
+          <div className="animate-up opacity-0">
             <p className={"lg:text-2xl md:text-xl text-lg" + sublime}>
               My name is
             </p>
@@ -24,7 +24,7 @@ function Home() {
         <img
           src="/Bubby.png"
           className={
-            "lg:w-72 lg:h-96 md:w-48 md:h-64 w-36 h-48 rounded-full animate-up"
+            "lg:w-72 lg:h-96 md:w-48 md:h-64 w-36 h-48 rounded-full animate-up opacity-0"
           }
         />
       </div>
