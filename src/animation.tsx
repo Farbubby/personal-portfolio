@@ -1,5 +1,10 @@
 export function animateOnView() {
-  const animateOnScroll = (elements: any) => {
+  const options = {
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
+
+  const animateFadeDownOnScroll = (elements: any) => {
     elements.forEach((element: any) => {
       if (element.isIntersecting) {
         element.target.classList.remove("opacity-0");
@@ -8,7 +13,7 @@ export function animateOnView() {
     });
   };
 
-  const animateSlowOnScroll = (elements: any) => {
+  const animateFadeUpOnScroll = (elements: any) => {
     elements.forEach((element: any) => {
       if (element.isIntersecting) {
         element.target.classList.remove("opacity-0");
@@ -17,10 +22,10 @@ export function animateOnView() {
     });
   };
 
-  const observer = new IntersectionObserver(animateOnScroll);
+  const observer = new IntersectionObserver(animateFadeDownOnScroll, options);
   const elements = document.querySelectorAll(".animate-down");
 
-  const observer1 = new IntersectionObserver(animateSlowOnScroll);
+  const observer1 = new IntersectionObserver(animateFadeUpOnScroll, options);
   const elements1 = document.querySelectorAll(".animate-up");
 
   elements.forEach((target) => {

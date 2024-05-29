@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { smoothScrollTo, smoothScrollToBottom } from "../functions";
+import { smoothScrollTo, smoothScrollToBottom } from "../animation";
 import { useMediaQuery } from "react-responsive";
 
 function Navbar() {
