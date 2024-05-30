@@ -5,7 +5,6 @@ import { useMediaQuery } from "react-responsive";
 function Navbar() {
   const [y, setY] = useState(0);
   const [scrollStatus, setScrollStatus] = useState(false);
-  const [mobile, setMobile] = useState(false);
   const [sectionList, setSectionList] = useState([
     "About",
     "Projects",
@@ -47,7 +46,7 @@ function Navbar() {
     </svg>,
   ]);
 
-  const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   let moveNavBar =
     scrollStatus && y != 0
@@ -63,7 +62,7 @@ function Navbar() {
     " hover:text-white px-3 py-1 rounded-xl duration-200 font-bold text-md drop-shadow-glow" +
     sublime;
 
-  let arrange = mobile ? " justify-evenly" : " gap-4 justify-end";
+  let arrange = isMobile ? " justify-evenly" : " gap-4 justify-end";
 
   const changeNav = () => {
     window.scrollY > y ||
@@ -73,14 +72,6 @@ function Navbar() {
       : setScrollStatus(true);
     setY(window.scrollY);
   };
-
-  useEffect(() => {
-    if (isMobile) {
-      setMobile(true);
-    } else {
-      setMobile(false);
-    }
-  }, [isMobile]);
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
@@ -98,18 +89,18 @@ function Navbar() {
           arrange
         }>
         <button onClick={() => smoothScrollTo("about")} className={navButton}>
-          {mobile ? svgList[0] : sectionList[0]}
+          {isMobile ? svgList[0] : sectionList[0]}
         </button>
         <button
           onClick={() => smoothScrollTo("projects")}
           className={navButton}>
-          {mobile ? svgList[1] : sectionList[1]}
+          {isMobile ? svgList[1] : sectionList[1]}
         </button>
         <button onClick={() => smoothScrollToBottom()} className={navButton}>
-          {mobile ? svgList[2] : sectionList[2]}
+          {isMobile ? svgList[2] : sectionList[2]}
         </button>
         <a href="/resume.pdf" className={navButton}>
-          {mobile ? svgList[3] : sectionList[3]}
+          {isMobile ? svgList[3] : sectionList[3]}
         </a>
         <a href="https://github.com/Farbubby" className={navButton}>
           <svg
