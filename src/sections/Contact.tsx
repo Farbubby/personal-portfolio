@@ -17,10 +17,10 @@ function Contact() {
         Contact me
       </div>
       <div className="flex flex-col items-center">
-        <div className={"max-w-lg text-lg"}>
+        <div className={"max-w-2xl text-lg"}>
           <p
             className={
-              "animate-up opacity-0 text-start text-fuchsia-400 drop-shadow-glow"
+              "animate-up opacity-0 text-center text-fuchsia-400 drop-shadow-glow"
             }>
             If you have any questions or would like to get in touch, please
             contact me through email. I will be happy to respond as soon as I am

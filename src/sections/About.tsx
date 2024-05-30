@@ -12,7 +12,7 @@ function About() {
           }>
           About me
         </div>
-        <div className={"max-w-2xl text-lg"}>
+        <div className={"max-w-3xl text-lg"}>
           <p
             className={
               "mb-4 animate-up text-fuchsia-400 drop-shadow-glow opacity-0"
