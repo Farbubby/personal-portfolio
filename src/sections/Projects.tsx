@@ -16,34 +16,85 @@ function Projects() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           <Project
-            name="Find My Professor"
-            description="An app that provides a list of professors with average ratings, reviews, and adjective radar charts given a university name and a course code."
-            tools={["Go", "GraphQL", "SQL", "PostgreSQL"]}
+            name="Find My Professors"
+            description="A web application that aims to help college students find their professors by searching for the course they plan to take and provides in-depth analysis and relevant data for each professor teaching it."
+            tools={[
+              "Go",
+              "GraphQL",
+              "SQL",
+              "PostgreSQL",
+              "Nextjs",
+              "TailwindCSS",
+            ]}
             url="https://github.com/FindMyProfessors"
           />
           <Project
-            name="Stocks Prediction"
-            description="An LSTM model that predicts the closing price of a stock in one minute time intervals."
-            tools={["Python", "TensorFlow", "Pandas", "NumPy", "yfinance"]}
-            url="https://github.com/kylekaracadag/Stocks-Prediction"
+            name="Handy Dollar"
+            description="A financial planning tool application that aims to help users understand and break down their transactions and expenses in order to better manage their finances."
+            tools={[
+              "TypeScript",
+              "Nextjs",
+              "TailwindCSS",
+              "PostgreSQL",
+              "OpenAI",
+              "Azure",
+              "Supabase",
+              "Plaid",
+            ]}
+            url="https://github.com/the-bigbrains/HandyDollar"
           />
           <Project
-            name="Grocery App"
-            description="An app that displays a selection of food items of different types and the user has to login to manage and checkout their cart."
-            tools={["TypeScript", "React", "TailwindCSS", "Express", "Vite"]}
-            url="https://github.com/Farbubby/grocery-app"
+            name="Review Summarizer"
+            description="A web application that grabs top positive and negative reviews for a product and generates a pros and cons and a general consensus summary for that product."
+            tools={[
+              "TypeScript",
+              "Nextjs",
+              "TailwindCSS",
+              "Expressjs",
+              "Puppeteer",
+              "OpenAI",
+            ]}
+            url="https://github.com/the-bigbrains/review-summarizer"
           />
           <Project
-            name="Build A Forest"
-            description="A program that processes a text file containing a list of CRUD operations and queries using binary search trees and outputs each query result of the forest."
-            tools={["C"]}
-            url="https://github.com/Farbubby/build-a-forest"
+            name="Code Clash"
+            description="A leetcode style battle game where players get matched against each other to find the fastest solutions to coding problems in the shortest amount of time."
+            tools={[
+              "TypeScript",
+              "Mithril",
+              "TailwindCSS",
+              "Expressjs",
+              "Socketio",
+              "MongoDB",
+            ]}
+            url="https://github.com/Shi-morrison/CodeClash"
           />
           <Project
-            name="Personnel Managment System"
-            description="A menu program that processes user inputs that allows the user to add and remove students/faculty, search for any person by ID, and print a list of students/faculty."
-            tools={["Java"]}
-            url="https://github.com/Farbubby/personnel-management-system"
+            name="Overtone"
+            description="A small AI chat application which is similar to the ChatGPT but with an extra feature of text-to-speech to bring accessibility and add a more interactive experience."
+            tools={[
+              "TypeScript",
+              "Nextjs",
+              "TailwindCSS",
+              "AWS",
+              "Go",
+              "OpenAI",
+            ]}
+            url="https://github.com/Bombachicky/TTS-AI"
+          />
+          <Project
+            name="Yap App | (In progress...)"
+            description="A twitter-inspired social media application that allows users to create posts, comment on posts, and chat with others in real-time."
+            tools={[
+              "TypeScript",
+              "Nextjs",
+              "TailwindCSS",
+              "PostgreSQL",
+              "Lucia",
+              "Socketio",
+              "Prisma",
+            ]}
+            url="https://github.com/Farbubby/yap-app"
           />
         </div>
       </div>
