@@ -23,7 +23,7 @@ function Contact() {
         <a
           href="mailto:farhanmahbub88@gmail.com"
           className={
-            "mt-10 hover:drop-shadow-glow border-2 border-blue-400 text-white bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl p-4 ease-in-out hover:scale-105 duration-200 max-w-lg animate-up"
+            "mt-10 hover:drop-shadow-glow border-2 border-blue-400 text-white bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl p-4 ease-in-out hover:scale-105 duration-200 max-w-lg animate-up opacity-0"
           }>
           Contact
         </a>
