@@ -1,16 +1,12 @@
 import Project from "../components/Project";
 
 function Projects() {
-  let sublime =
-    " bg-gradient-to-t from-rose-400 via-fuchsia-500 to-indigo-500 text-transparent bg-clip-text drop-shadow-glow";
-
   return (
     <div id="projects" className={"flex flex-col"}>
       <div className="flex flex-col w-fit gap-10">
         <div
           className={
-            "text-4xl md:text-5xl font-bold p-1 animate-down opacity-0 text-left py-2" +
-            sublime
+            "text-4xl md:text-5xl font-bold p-1 animate-down opacity-0 text-left py-2 text-fuchsia-400 drop-shadow-glow"
           }>
           Projects
         </div>

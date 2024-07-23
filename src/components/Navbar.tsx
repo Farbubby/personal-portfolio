@@ -54,13 +54,8 @@ function Navbar() {
       : y == 0
       ? " translate-y-0 ease-in-out duration-300"
       : " -translate-y-full ease-in-out duration-300";
-
-  let sublime =
-    " bg-gradient-to-t from-rose-400 via-fuchsia-400 to-indigo-400 text-transparent bg-clip-text";
-
   let navButton =
-    " hover:text-white px-3 py-1 rounded-xl duration-200 font-bold text-md drop-shadow-glow" +
-    sublime;
+    " hover:text-white px-3 py-1 rounded-xl duration-200 font-bold text-md drop-shadow-glow text-fuchsia-400 drop-shadow-glow";
 
   let arrange = isMobile ? " justify-evenly" : " gap-4 justify-end";
 
