@@ -1,73 +1,63 @@
-import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { useState } from "react";
 import { smoothScrollTo, smoothScrollToBottom } from "@/animation";
-import { useMediaQuery } from "react-responsive";
-import SideBar from "./Sidebar";
 
-function Navbar() {
-  const [y, setY] = useState(0);
-  const [scrollStatus, setScrollStatus] = useState(false);
-  const sectionList: string[] = ["About", "Projects", "Contacts", "Resume"];
-
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
-
-  let moveNavBar =
-    scrollStatus && y != 0
-      ? " translate-y-0 ease-in-out duration-300"
-      : y == 0
-      ? " translate-y-0 ease-in-out duration-300"
-      : " -translate-y-full ease-in-out duration-300";
+export default function MobileBar() {
+  const sectionList: string[] = ["About", "Projects", "Contact", "Resume"];
 
   let navButton =
     " hover:text-white px-3 py-1 duration-200 font-bold text-md drop-shadow-glow text-fuchsia-400";
 
-  const changeNav = () => {
-    window.scrollY > y ||
-    window.innerHeight + Math.round(window.scrollY) >=
-      document.body.offsetHeight
-      ? setScrollStatus(false)
-      : setScrollStatus(true);
-    setY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-    return () => {
-      window.removeEventListener("scroll", changeNav);
-    };
-  }, [changeNav]);
-
   return (
-    <>
-      <div
-        className={
-          "flex flex-row px-4 h-16 fixed w-full bg-gray-950 z-10 items-center border-b border-gray-800 gap-4 justify-between" +
-          moveNavBar
-        }>
-        <button
-          onClick={() => smoothScrollTo("home")}
-          className={"text-xl" + navButton}>
-          Farhan Mahbub
+    <Sheet>
+      <SheetTrigger asChild>
+        <button>
+          <svg
+            className="fill-fuchsia-400 w-8 h-8 hover:fill-white duration-200 drop-shadow-glow"
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            stroke-linejoin="round"
+            stroke-miterlimit="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
+              fill-rule="nonzero"
+            />
+          </svg>
         </button>
-        {!isMobile ? (
+      </SheetTrigger>
+      <SheetContent className="bg-gray-950">
+        <div className="flex flex-col gap-10 h-full items-center justify-center">
+          <SheetClose
+            onClick={() => smoothScrollTo("about")}
+            className={navButton}>
+            {sectionList[0]}
+          </SheetClose>
+          <SheetClose
+            onClick={() => smoothScrollTo("projects")}
+            className={navButton}>
+            {sectionList[1]}
+          </SheetClose>
+          <SheetClose
+            onClick={() => smoothScrollToBottom()}
+            className={navButton}>
+            {sectionList[2]}
+          </SheetClose>
+          <a href="/resume.pdf" className={navButton}>
+            {sectionList[3]}
+          </a>
           <div className="flex flex-row gap-4">
-            <button
-              onClick={() => smoothScrollTo("about")}
-              className={navButton}>
-              {sectionList[0]}
-            </button>
-            <button
-              onClick={() => smoothScrollTo("projects")}
-              className={navButton}>
-              {sectionList[1]}
-            </button>
-            <button
-              onClick={() => smoothScrollToBottom()}
-              className={navButton}>
-              {sectionList[2]}
-            </button>
-            <a href="/resume.pdf" className={navButton}>
-              {sectionList[3]}
-            </a>
             <a href="https://github.com/Farbubby" className={navButton}>
               <svg
                 className="fill-fuchsia-400 w-6 h-6 hover:fill-white duration-200"
@@ -91,12 +81,8 @@ function Navbar() {
               </svg>
             </a>
           </div>
-        ) : (
-          <SideBar />
-        )}
-      </div>
-    </>
+        </div>
+      </SheetContent>
+    </Sheet>
   );
 }
-
-export default Navbar;
