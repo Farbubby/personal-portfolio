@@ -15,7 +15,7 @@ function Projects() {
       description="A web application that aims to help college students find their professors by searching for the course they plan to take and provides in-depth analysis and relevant data for each professor teaching it."
       tools={["Go", "GraphQL", "SQL", "PostgreSQL", "Nextjs", "TailwindCSS"]}
       url="https://github.com/FindMyProfessors"
-      image="./fmp.png"
+      image="./projects/fmp.png"
       devPost="https://devpost.com/software/find-my-professors"
     />,
     <Project
@@ -32,7 +32,7 @@ function Projects() {
         "Plaid",
       ]}
       url="https://github.com/the-bigbrains/HandyDollar"
-      image="./hd.jpg"
+      image="./projects/hd.jpg"
       devPost="https://devpost.com/software/handydollar"
     />,
     <Project
@@ -47,7 +47,7 @@ function Projects() {
         "OpenAI",
       ]}
       url="https://github.com/the-bigbrains/review-summarizer"
-      image="./rs.jpg"
+      image="./projects/rs.jpg"
       devPost="https://devpost.com/software/review-generator-9000"
     />,
     <Project
@@ -62,14 +62,14 @@ function Projects() {
         "MongoDB",
       ]}
       url="https://github.com/Shi-morrison/CodeClash"
-      image="./cc.png"
+      image="./projects/cc.png"
     />,
     <Project
       name="Overtone"
       description="A small AI chat application which is similar to the ChatGPT but with an extra feature of text-to-speech to bring accessibility and add a more interactive experience."
       tools={["TypeScript", "Nextjs", "TailwindCSS", "AWS", "Go", "OpenAI"]}
       url="https://github.com/Bombachicky/TTS-AI"
-      image="./ot.png"
+      image="./projects/ot.png"
     />,
   ];
 
