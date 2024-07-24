@@ -1,7 +1,7 @@
 export function animateOnView() {
   const options = {
     rootMargin: "0px",
-    threshold: 1.0,
+    threshold: 0.8,
   };
 
   const animateFadeDownOnScroll = (elements: any) => {
@@ -22,18 +22,63 @@ export function animateOnView() {
     });
   };
 
-  const observer = new IntersectionObserver(animateFadeDownOnScroll, options);
-  const elements = document.querySelectorAll(".animate-down");
+  const animateFadeLeftOnScroll = (elements: any) => {
+    elements.forEach((element: any) => {
+      if (element.isIntersecting) {
+        element.target.classList.remove("opacity-0");
+        element.target.classList.add("animate-fadeLeft");
+      }
+    });
+  };
 
-  const observer1 = new IntersectionObserver(animateFadeUpOnScroll, options);
-  const elements1 = document.querySelectorAll(".animate-up");
+  const animateFadeRightOnScroll = (elements: any) => {
+    elements.forEach((element: any) => {
+      if (element.isIntersecting) {
+        element.target.classList.remove("opacity-0");
+        element.target.classList.add("animate-fadeRight");
+      }
+    });
+  };
 
-  elements.forEach((target) => {
-    observer.observe(target);
+  // Down fade in animation
+  const downObserver = new IntersectionObserver(
+    animateFadeDownOnScroll,
+    options
+  );
+  const downElements = document.querySelectorAll(".animate-down");
+
+  downElements.forEach((target) => {
+    downObserver.observe(target);
   });
 
-  elements1.forEach((target) => {
-    observer1.observe(target);
+  // Up fade in animation
+  const upObserver = new IntersectionObserver(animateFadeUpOnScroll, options);
+  const upElements = document.querySelectorAll(".animate-up");
+
+  upElements.forEach((target) => {
+    upObserver.observe(target);
+  });
+
+  // Left fade in animation
+  const leftObserver = new IntersectionObserver(
+    animateFadeLeftOnScroll,
+    options
+  );
+  const leftElements = document.querySelectorAll(".animate-left");
+
+  leftElements.forEach((target) => {
+    leftObserver.observe(target);
+  });
+
+  // Right fade in animation
+  const rightObserver = new IntersectionObserver(
+    animateFadeRightOnScroll,
+    options
+  );
+  const rightElements = document.querySelectorAll(".animate-right");
+
+  rightElements.forEach((target) => {
+    rightObserver.observe(target);
   });
 }
 

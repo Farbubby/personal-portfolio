@@ -76,12 +76,24 @@ module.exports = {
           to: { height: "0" },
         },
         fadeDown: {
-          "0%": { transform: "translateY(-1rem)", opacity: 0 },
+          "0%": { transform: "translateY(-2rem)", opacity: 0 },
           "100%": { transform: "translateY(0rem)", opacity: 1 },
         },
         fadeUp: {
-          "0%": { transform: "translateY(1rem)", opacity: 0 },
+          "0%": { transform: "translateY(2rem)", opacity: 0 },
           "100%": { transform: "translateY(0rem)", opacity: 1 },
+        },
+        fadeLeft: {
+          "0%": { transform: "translateX(-2rem)", opacity: 0 },
+          "100%": { transform: "translateX(0rem)", opacity: 1 },
+        },
+        fadeRight: {
+          "0%": { transform: "translateX(2rem)", opacity: 0 },
+          "100%": { transform: "translateX(0rem)", opacity: 1 },
+        },
+        fadeOut: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
         },
       },
       animation: {
@@ -89,6 +101,9 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         fadeDown: "fadeDown 1s ease-in-out",
         fadeUp: "fadeUp 1s ease-in-out",
+        fadeLeft: "fadeLeft 1s ease-in-out",
+        fadeRight: "fadeRight 1s ease-in-out",
+        fadeOut: "fadeOut 1s ease-in-out",
       },
     },
   },

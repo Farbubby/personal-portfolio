@@ -11,11 +11,11 @@ function Home() {
           className={"flex flex-col gap-8 text-fuchsia-400 drop-shadow-glow"}>
           <p
             className={
-              "py-2 animate-down opacity-0 text-4xl md:text-5xl lg:text-6xl"
+              "py-2 animate-left opacity-0 text-4xl md:text-5xl lg:text-6xl"
             }>
             Welcome!
           </p>
-          <div className="animate-up opacity-0 lg:text-2xl md:text-xl text-lg">
+          <div className="animate-left opacity-0 lg:text-2xl md:text-xl text-lg">
             <p>My name is</p>
             <p>Farhan Mahbub</p>
           </div>
@@ -23,7 +23,7 @@ function Home() {
         <img
           src="/bubby.png"
           className={
-            "lg:w-72 lg:h-96 md:w-48 md:h-64 w-36 h-48 rounded-full animate-up opacity-0"
+            "lg:w-72 lg:h-96 md:w-48 md:h-64 w-36 h-48 rounded-full animate-right opacity-0"
           }
         />
       </div>

@@ -14,7 +14,7 @@ function Project({ name, description, tools, url, image, devPost }: Props) {
     <>
       <div
         className={
-          "flex flex-col justify-between gap-5 border-2 border-blue-400 text-white bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl p-4 ease-in-out hover:drop-shadow-glow h-full"
+          "animate-left opacity-0 flex flex-col justify-between gap-5 border-2 border-blue-400 text-white bg-gradient-to-tl from-rose-400 via-fuchsia-500 to-indigo-500 rounded-xl p-4 ease-in-out hover:drop-shadow-glow h-full"
         }>
         <div className="font-bold text-xl flex flex-row justify-between items-center">
           <div>{name}</div>
