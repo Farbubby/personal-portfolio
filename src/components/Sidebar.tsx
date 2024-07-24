@@ -13,7 +13,7 @@ import { useState } from "react";
 import { smoothScrollTo, smoothScrollToBottom } from "@/animation";
 
 export default function MobileBar() {
-  const sectionList: string[] = ["About", "Projects", "Contact", "Resume"];
+  const sectionList: string[] = ["About", "Skills", "Projects", "Contacts"];
 
   let navButton =
     " hover:text-white px-3 py-1 duration-200 font-bold text-md drop-shadow-glow text-fuchsia-400";
@@ -45,19 +45,32 @@ export default function MobileBar() {
             {sectionList[0]}
           </SheetClose>
           <SheetClose
-            onClick={() => smoothScrollTo("projects")}
+            onClick={() => smoothScrollTo("skills")}
             className={navButton}>
             {sectionList[1]}
           </SheetClose>
           <SheetClose
-            onClick={() => smoothScrollToBottom()}
+            onClick={() => smoothScrollTo("projects")}
             className={navButton}>
             {sectionList[2]}
           </SheetClose>
-          <a href="/resume.pdf" className={navButton}>
+          <SheetClose
+            onClick={() => smoothScrollToBottom()}
+            className={navButton}>
             {sectionList[3]}
-          </a>
+          </SheetClose>
           <div className="flex flex-row gap-4">
+            <a href="/resume.pdf" className={navButton}>
+              <svg
+                className="fill-fuchsia-400 w-6 h-6 hover:fill-white duration-200"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd">
+                <path d="M22 0h-20v24h14l6-6v-18zm-6 18h4.36l-4.36 4.385v-4.385zm-3 1h-8v1h8v-1zm0-3h-8v1h8v-1zm6-2v-1h-14v1h14zm-7.059-4.968c-1.147-.265-2.214-.497-1.697-1.473 1.573-2.97.417-4.559-1.244-4.559-1.694 0-2.821 1.65-1.244 4.559.532.982-.575 1.214-1.697 1.473-1.024.237-1.062.745-1.059 1.635l.001.333h7.997l.001-.323c.004-.896-.03-1.407-1.058-1.645zm7.059.968h-4v1h4v-1zm0-2v-1h-4v1h4zm0-4h-4v1h4v-1z" />
+              </svg>
+            </a>
             <a href="https://github.com/Farbubby" className={navButton}>
               <svg
                 className="fill-fuchsia-400 w-6 h-6 hover:fill-white duration-200"
