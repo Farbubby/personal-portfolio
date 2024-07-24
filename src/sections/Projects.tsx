@@ -78,7 +78,7 @@ function Projects() {
       <div className="flex flex-col w-full gap-10">
         <div
           className={
-            "text-4xl md:text-5xl font-bold p-1 animate-down opacity-0 text-left py-2 text-fuchsia-400 drop-shadow-glow"
+            "text-3xl md:text-4xl lg:text-5xl font-bold p-1 animate-down opacity-0 text-left py-2 text-fuchsia-400 drop-shadow-glow"
           }>
           Projects
         </div>

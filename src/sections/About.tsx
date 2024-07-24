@@ -4,11 +4,14 @@ function About() {
       <div className="flex flex-col gap-10 w-fit">
         <div
           className={
-            "text-4xl md:text-5xl font-bold p-1 animate-down opacity-0 text-fuchsia-400 drop-shadow-glow"
+            "text-3xl md:text-4xl lg:text-5xl font-bold p-1 animate-down opacity-0 text-fuchsia-400 drop-shadow-glow"
           }>
           About me
         </div>
-        <div className={"max-w-3xl text-lg flex flex-col gap-4"}>
+        <div
+          className={
+            "max-w-3xl lg:text-xl md:text-lg text-md flex flex-col gap-4"
+          }>
           <p
             className={
               "animate-up text-fuchsia-400 drop-shadow-glow opacity-0"

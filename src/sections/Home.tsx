@@ -5,16 +5,19 @@ function Home() {
       className="flex flex-col h-screen justify-center items-center">
       <div
         className={
-          "flex flex-col md:flex-row font-bold items-center justify-between gap-8 text-center md:text-left w-3/4"
+          "flex flex-col md:flex-row font-bold items-center justify-between gap-8 text-center w-3/4"
         }>
         <div
-          className={
-            "flex flex-col text-5xl md:text-6xl gap-8 text-fuchsia-400 drop-shadow-glow"
-          }>
-          <p className={"py-2 animate-down opacity-0"}>Welcome!</p>
-          <div className="animate-up opacity-0">
-            <p className={"md:text-2xl text-xl"}>My name is</p>
-            <p className={"md:text-2xl text-xl"}>Farhan Mahbub</p>
+          className={"flex flex-col gap-8 text-fuchsia-400 drop-shadow-glow"}>
+          <p
+            className={
+              "py-2 animate-down opacity-0 text-4xl md:text-5xl lg:text-6xl"
+            }>
+            Welcome!
+          </p>
+          <div className="animate-up opacity-0 lg:text-2xl md:text-xl text-lg">
+            <p>My name is</p>
+            <p>Farhan Mahbub</p>
           </div>
         </div>
         <img

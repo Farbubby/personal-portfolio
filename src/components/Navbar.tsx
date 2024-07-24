@@ -46,7 +46,7 @@ function Navbar() {
         <button
           onClick={() => smoothScrollTo("home")}
           className={"text-xl" + navButton}>
-          Farhan Mahbub
+          FM
         </button>
         {!isMobile ? (
           <div className="flex flex-row gap-4">

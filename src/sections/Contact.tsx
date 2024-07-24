@@ -5,15 +5,15 @@ function Contact() {
       className={"flex flex-col h-screen justify-center px-8 gap-10"}>
       <div
         className={
-          "text-4xl md:text-5xl font-bold p-1 text-center animate-down opacity-0 text-fuchsia-400 drop-shadow-glow"
+          "text-3xl md:text-4xl lg:text-5xl font-bold p-1 text-center animate-down opacity-0 text-fuchsia-400 drop-shadow-glow"
         }>
         Contact me
       </div>
       <div className="flex flex-col items-center">
-        <div className={"max-w-2xl text-lg"}>
+        <div className={"max-w-2xl"}>
           <p
             className={
-              "animate-up opacity-0 text-center text-fuchsia-400 drop-shadow-glow"
+              "lg:text-xl md:text-lg text-md animate-up opacity-0 text-center text-fuchsia-400 drop-shadow-glow"
             }>
             If you have any questions or would like to get in touch, please
             contact me through email. I will be happy to respond as soon as I am
