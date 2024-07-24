@@ -15,6 +15,8 @@ function Projects() {
       description="A web application that aims to help college students find their professors by searching for the course they plan to take and provides in-depth analysis and relevant data for each professor teaching it."
       tools={["Go", "GraphQL", "SQL", "PostgreSQL", "Nextjs", "TailwindCSS"]}
       url="https://github.com/FindMyProfessors"
+      image="./fmp.png"
+      devPost="https://devpost.com/software/find-my-professors"
     />,
     <Project
       name="Handy Dollar"
@@ -30,6 +32,8 @@ function Projects() {
         "Plaid",
       ]}
       url="https://github.com/the-bigbrains/HandyDollar"
+      image="./hd.jpg"
+      devPost="https://devpost.com/software/handydollar"
     />,
     <Project
       name="Review Summarizer"
@@ -43,6 +47,8 @@ function Projects() {
         "OpenAI",
       ]}
       url="https://github.com/the-bigbrains/review-summarizer"
+      image="./rs.jpg"
+      devPost="https://devpost.com/software/review-generator-9000"
     />,
     <Project
       name="Code Clash"
@@ -56,26 +62,14 @@ function Projects() {
         "MongoDB",
       ]}
       url="https://github.com/Shi-morrison/CodeClash"
+      image="./cc.png"
     />,
     <Project
       name="Overtone"
       description="A small AI chat application which is similar to the ChatGPT but with an extra feature of text-to-speech to bring accessibility and add a more interactive experience."
       tools={["TypeScript", "Nextjs", "TailwindCSS", "AWS", "Go", "OpenAI"]}
       url="https://github.com/Bombachicky/TTS-AI"
-    />,
-    <Project
-      name="Yap App | (In progress...)"
-      description="A twitter-inspired social media application that allows users to create posts, comment on posts, and chat with others in real-time."
-      tools={[
-        "TypeScript",
-        "Nextjs",
-        "TailwindCSS",
-        "PostgreSQL",
-        "Lucia",
-        "Socketio",
-        "Prisma",
-      ]}
-      url="https://github.com/Farbubby/yap-app"
+      image="./ot.png"
     />,
   ];
 
