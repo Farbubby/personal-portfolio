@@ -17,27 +17,37 @@ function About() {
               "animate-up text-fuchsia-400 drop-shadow-glow opacity-0"
             }>
             Hello! I am a student attending the University of Central Florida
-            currently pursuing a major in Computer Science and a minor in
-            Mathematics.
+            pursuing a major in Computer Science and a minor in Mathematics.
           </p>
           <p
             className={
               "animate-up text-fuchsia-400 drop-shadow-glow opacity-0"
             }>
-            My programming voyage started when I learned Java from one of my
-            favorite teachers back in highschool, I then realized that I enjoyed
-            programming and its endless problem-solving and creativity. Fast
-            forward, I am passionate about learning new technologies and
-            building projects.
+            I am an aspiring Full-stack Software Engineer passionate about
+            building products that impact users and make their lives easier. I
+            am also a leader who strives to connect people and help others. I am
+            always looking for opportunities to learn and grow as a developer
+            and as a person.
           </p>
           <p
             className={
               "animate-up text-fuchsia-400 drop-shadow-glow opacity-0"
             }>
-            I am interested to get into software engineering. More specifically,
-            I am interested in full-stack web development and machine learning
-            as I also enjoy mathematics and statistics. I am currently learning
-            React and Tailwind CSS which is what I used to create this website.
+            With the current AI boom and my appreciation for the importance of
+            AI in elevating applications and improving everday experiences, I
+            have been learning more about AI and taking steps toward becoming a
+            Full-stack and AI/ML Software Engineer. I am eager to work or
+            collaborate on AI/ML projects and actively seek ideas to incorporate
+            AI/ML into my current and future projects.
+          </p>
+          <p
+            className={
+              "animate-up text-fuchsia-400 drop-shadow-glow opacity-0"
+            }>
+            Some of my hobbies include watching anime, listening to music,
+            anything related to cars, and traveling. I am always looking to meet
+            new friends, so feel free to chat with me about tech, life, or
+            anything else!
           </p>
         </div>
       </div>
