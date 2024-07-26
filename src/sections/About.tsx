@@ -24,10 +24,10 @@ function About() {
               "animate-up text-fuchsia-400 drop-shadow-glow opacity-0"
             }>
             I am an aspiring Full-stack Software Engineer passionate about
-            building products that impact users and make their lives easier. I
-            am also a leader who strives to connect people and help others. I am
-            always looking for opportunities to learn and grow as a developer
-            and as a person.
+            problem-solving and building products that impact users and make
+            their lives easier. I am also a leader who strives to connect people
+            and help others. I am always looking for opportunities to learn and
+            grow as a developer and as a person.
           </p>
           <p
             className={
